@@ -1,6 +1,6 @@
 package myNavigator.mapUtils;
 
- enum INSTRUCTION_ENUM {
+public enum INSTRUCTION_ENUM {
     NO_GO(0x0),
     HARD_CLEAN(0x1),
     SOFT_CLEAN(0x2),

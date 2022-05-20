@@ -5,12 +5,12 @@ import myNavigator.common.PositionMapper;
 import myNavigator.common.RadarInfo;
 
 public class MapUpdater {
-    private Map map;
+    private MyMap myMap;
     private PositionMapper mapper;
     private RadarInfo info;
 
-    public MapUpdater(Map inputMap){
-        this.map = inputMap;
+    public MapUpdater(MyMap inputMyMap){
+        this.myMap = inputMyMap;
         this.info = RadarInfo.getInstance();
         this.mapper = PositionMapper.getInstance();
     }
@@ -24,7 +24,7 @@ public class MapUpdater {
         return blockType;
     }
 
-    public Map getMap() {
-        return map;
+    public MyMap getMap() {
+        return myMap;
     }
 }

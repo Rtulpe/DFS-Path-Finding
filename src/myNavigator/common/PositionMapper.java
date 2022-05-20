@@ -9,7 +9,7 @@ public class PositionMapper extends ICoordinates {
         return instance == null ? new PositionMapper() : instance;
     }
 
-    void refreshPosition(){
+    public void refreshPosition(){
         // TODO: 5/20/22 add refresh position
     }
 }

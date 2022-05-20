@@ -5,12 +5,12 @@ import myNavigator.blocks.IBlock;
 
 import java.util.ArrayList;
 
-class Map {
+public class MyMap {
     private String mapName;
     private ArrayList<Zone> zoneList;
     private IBlock homeBlock;
 
-    public Map(String name, ArrayList<Zone> zones){
+    public MyMap(String name, ArrayList<Zone> zones){
         this.mapName = name;
         this.zoneList = zones;
         setHome();
@@ -31,7 +31,7 @@ class Map {
         }
     }
 
-    public Map getMapCopy() throws CloneNotSupportedException {
-        return (Map) this.clone();
+    public MyMap getMapCopy() throws CloneNotSupportedException {
+        return (MyMap) this.clone();
     }
 }
