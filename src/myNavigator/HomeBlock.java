@@ -1,6 +1,6 @@
 package myNavigator;
 
-class HomeBlock implements IBlock {
+class HomeBlock extends AbstractBlock {
     @Override
     public IBlock createBlock() {
         return this;

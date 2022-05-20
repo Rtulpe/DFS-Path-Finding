@@ -1,5 +1,5 @@
 package myNavigator;
 
-interface IBlock {
+interface IBlock{
     public IBlock createBlock();
 }
