@@ -5,4 +5,9 @@ public class HomeBlock extends AbstractBlock {
     public IBlock createBlock() {
         return this;
     }
+
+    @Override
+    public String toString(){
+        return "H";
+    }
 }

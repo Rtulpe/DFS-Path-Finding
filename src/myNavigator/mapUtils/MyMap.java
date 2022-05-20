@@ -2,6 +2,7 @@ package myNavigator.mapUtils;
 
 import myNavigator.blocks.HomeBlock;
 import myNavigator.blocks.IBlock;
+import myNavigator.common.POSITION_ENUM;
 
 import java.util.ArrayList;
 
@@ -9,10 +10,11 @@ public class MyMap {
     private String mapName;
     private ArrayList<Zone> zoneList;
     private IBlock homeBlock;
+    private IBlock[][] map;
 
-    public MyMap(String name, ArrayList<Zone> zones){
+    public MyMap(String name, IBlock[][] mapInput){
         this.mapName = name;
-        this.zoneList = zones;
+        this.map = mapInput;
         setHome();
     }
 
@@ -33,5 +35,18 @@ public class MyMap {
 
     public MyMap getMapCopy() throws CloneNotSupportedException {
         return (MyMap) this.clone();
+    }
+
+    @Override
+    public String toString(){
+        String outString = "";
+
+        for (IBlock[] iBlocks : map) {
+            for (IBlock index : iBlocks) {
+                outString += index;
+            }
+            outString += "\n";
+        }
+        return outString;
     }
 }

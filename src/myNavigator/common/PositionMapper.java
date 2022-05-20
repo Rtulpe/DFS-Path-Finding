@@ -2,7 +2,7 @@ package myNavigator.common;
 
 import myNavigator.blocks.IBlock;
 
-public class PositionMapper {
+public class PositionMapper extends ICoordinates {
     private static PositionMapper instance = null;
     private static IBlock position;
     private static POSITION_ENUM robotRotation;
@@ -20,10 +20,6 @@ public class PositionMapper {
      */
     public void refreshPosition(){
        // in here we would get the updated position
-    }
-
-    public IBlock getPosition(){
-        return position;
     }
 
     public POSITION_ENUM getRotation() { return robotRotation; }
