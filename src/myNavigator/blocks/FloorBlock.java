@@ -1,6 +1,6 @@
-package myNavigator;
+package myNavigator.blocks;
 
-class HomeBlock extends AbstractBlock {
+class FloorBlock extends AbstractBlock {
     @Override
     public IBlock createBlock() {
         return this;

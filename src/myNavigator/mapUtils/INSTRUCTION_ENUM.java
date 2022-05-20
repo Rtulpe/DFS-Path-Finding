@@ -1,4 +1,4 @@
-package myNavigator;
+package myNavigator.mapUtils;
 
  enum INSTRUCTION_ENUM {
     NO_GO(0x0),

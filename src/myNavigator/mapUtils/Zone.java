@@ -1,4 +1,6 @@
-package myNavigator;
+package myNavigator.mapUtils;
+
+import myNavigator.blocks.IBlock;
 
 import java.util.ArrayList;
 

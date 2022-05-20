@@ -1,4 +1,4 @@
-package myNavigator;
+package myNavigator.common;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,7 @@
-package myNavigator;
+package myNavigator.mapUtils;
+
+import myNavigator.blocks.HomeBlock;
+import myNavigator.blocks.IBlock;
 
 import java.util.ArrayList;
 
@@ -26,5 +29,9 @@ class Map {
         } catch (Exception e){
             System.out.println("Unable to set home : " + e.getMessage());
         }
+    }
+
+    public Map getMapCopy() throws CloneNotSupportedException {
+        return (Map) this.clone();
     }
 }
