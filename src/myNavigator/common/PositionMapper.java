@@ -18,6 +18,10 @@ public class PositionMapper {
      * However, with this prototype, robot will remain static
      */
     public void refreshPosition(){
-       position = position; // in here we would get the updated position
+       // in here we would get the updated position
+    }
+
+    public IBlock getPosition(){
+        return position;
     }
 }
