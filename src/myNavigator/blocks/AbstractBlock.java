@@ -1,6 +1,22 @@
 package myNavigator.blocks;
 
-import myNavigator.common.ICoordinates;
+public abstract class AbstractBlock implements IBlock {
+    private IBlock NORTH;
+    private IBlock EAST;
+    private IBlock SOUTH;
+    private IBlock WEST;
 
-public abstract class AbstractBlock extends ICoordinates implements IBlock {
+    AbstractBlock (){
+        NORTH =  new EmptyBlock();
+        EAST =  new EmptyBlock();
+        SOUTH =  new EmptyBlock();
+        WEST =  new EmptyBlock();
+    }
+
+    public void setNeighbors(IBlock north, IBlock east, IBlock south, IBlock west){
+        this.NORTH = north!= null ? north : NORTH;
+        this.EAST = east!= null ? east : EAST;
+        this.SOUTH = south!= null ? south : SOUTH;
+        this.WEST = west!= null ? west : WEST;
+    }
 }

@@ -1,7 +1,10 @@
 package myNavigator.common;
 
-public class PositionMapper extends ICoordinates {
+import myNavigator.blocks.IBlock;
+
+public class PositionMapper {
     private static PositionMapper instance = null;
+    private static IBlock position;
 
     private PositionMapper(){}
 
@@ -9,7 +12,12 @@ public class PositionMapper extends ICoordinates {
         return instance == null ? new PositionMapper() : instance;
     }
 
+    /**
+     * Unimplemented: with the robot moving, robot's position would change
+     * requiring for a refresh.
+     * However, with this prototype, robot will remain static
+     */
     public void refreshPosition(){
-        // TODO: 5/20/22 add refresh position
+       position = position; // in here we would get the updated position
     }
 }

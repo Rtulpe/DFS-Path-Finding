@@ -4,7 +4,7 @@ import myNavigator.blocks.IBlock;
 
 import java.util.ArrayList;
 
-class Zone {
+public class Zone {
     private String zoneName;
     private ArrayList<INSTRUCTION_ENUM> instructionList;
     private ArrayList<IBlock> blockList;
@@ -14,19 +14,19 @@ class Zone {
         this.instructionList = list;
     }
 
-    void setInstructionList(ArrayList<INSTRUCTION_ENUM> list){
+    public void setInstructionList(ArrayList<INSTRUCTION_ENUM> list){
         this.instructionList = list;
     }
 
-    void setBlockList(ArrayList<IBlock> blocks){
+    public void setBlockList(ArrayList<IBlock> blocks){
         this.blockList = blocks;
     }
 
-    ArrayList<IBlock> getBlockList(){
+    public ArrayList<IBlock> getBlockList(){
         return this.blockList;
     }
 
-    ArrayList<IBlock> searchForBlocks(IBlock blockType){
+    public ArrayList<IBlock> searchForBlocks(IBlock blockType){
         ArrayList<IBlock> retList = new ArrayList<>();
         for (IBlock iBlock : blockList) {
             if (iBlock.getClass() == blockType.getClass()) retList.add(iBlock);
