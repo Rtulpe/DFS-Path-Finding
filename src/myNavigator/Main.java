@@ -2,6 +2,9 @@ package myNavigator;
 
 import myNavigator.blocks.*;
 import myNavigator.common.POSITION_ENUM;
+import myNavigator.common.PositionMapper;
+import myNavigator.common.RadarInfo;
+import myNavigator.mapUtils.MapUpdater;
 import myNavigator.mapUtils.MyMap;
 
 public class Main {
@@ -19,8 +22,30 @@ public class Main {
         EmptyBlock block33 = new EmptyBlock();
 
         IBlock[][] blockMap = {{block11,block12,block13},{block21,block22,block23},{block31,block32,block33}};
-        MyMap map = new MyMap("Map",blockMap);
+        //MyMap map = new MyMap("Map",blockMap);
 
-        System.out.println(map);
+        //MapUpdater updater = new MapUpdater();
+
+        MapUpdater upd = new MapUpdater(10);
+        //upd.checkOrCreate(0,0, block11);
+
+        //System.out.println(map);
+
+        PositionMapper mapper = PositionMapper.getInstance();
+
+        System.out.println(mapper);
+
+        for (int x = 0; x < 10; x++){
+            for (int y =0; y < 10; y++){
+                mapper.setPosition(x,y);
+                upd.updateMap();
+            }
+            x++;
+            for (int y = 9; y >= 0; y--){
+                mapper.setPosition(x,y);
+                upd.updateMap();
+            }
+        }
+        System.out.println(upd.getMap());
     }
 }

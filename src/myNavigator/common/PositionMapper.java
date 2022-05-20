@@ -10,7 +10,8 @@ public class PositionMapper extends ICoordinates {
     private PositionMapper(){}
 
     public static PositionMapper getInstance(){
-        return instance == null ? new PositionMapper() : instance;
+        if (instance == null) instance = new PositionMapper();
+        return instance;
     }
 
     /**

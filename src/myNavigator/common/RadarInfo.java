@@ -1,20 +1,33 @@
 package myNavigator.common;
 
+import java.util.Random;
+
 public class RadarInfo {
     private static RadarInfo instance = null;
-    private static byte data[];
+    private static short data;
 
     private RadarInfo(){}
 
     public static RadarInfo getInstance(){
-        return instance == null ? new RadarInfo() : instance;
+        if (instance == null) instance = new RadarInfo();
+        return instance;
     }
 
-    public void refreshData(){
-        // TODO: 5/20/22 implement data
+    /**
+     * This class should be getting radar data
+     * from the hardware, however, there is no
+     * hardware, thus random data is used.
+     */
+    private void refreshData(){
+        Random random = new Random();
+        int min = 0;
+        int max = 255;
+
+        data = (short) random.nextInt(max + 1);
     }
 
-    public byte[] getData(){
+    public short getData(){
+        refreshData();
         return data;
     }
 }

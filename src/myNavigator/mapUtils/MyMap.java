@@ -1,5 +1,6 @@
 package myNavigator.mapUtils;
 
+import myNavigator.blocks.AbstractBlock;
 import myNavigator.blocks.HomeBlock;
 import myNavigator.blocks.IBlock;
 import myNavigator.common.POSITION_ENUM;
@@ -16,6 +17,11 @@ public class MyMap {
         this.mapName = name;
         this.map = mapInput;
         setHome();
+    }
+
+    public MyMap(String name, int size){
+        this.mapName = name;
+        this.map = new IBlock[size][size];
     }
 
     void setHome() {
@@ -37,13 +43,26 @@ public class MyMap {
         return (MyMap) this.clone();
     }
 
+    public void update(int x, int y, IBlock block){
+        map[x][y] = block;
+    }
+
+    public boolean check(int x, int y, IBlock block){
+        if (map[x][y]==null) return false;
+        return map[x][y].getClass() == block.getClass();
+    }
+
+    public IBlock get(int x, int y){
+        return map[x][y];
+    }
+
     @Override
     public String toString(){
         String outString = "";
 
         for (IBlock[] iBlocks : map) {
             for (IBlock index : iBlocks) {
-                outString += index;
+                outString += index + " ";
             }
             outString += "\n";
         }
