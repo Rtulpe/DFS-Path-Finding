@@ -5,6 +5,7 @@ import myNavigator.blocks.IBlock;
 public class PositionMapper {
     private static PositionMapper instance = null;
     private static IBlock position;
+    private static POSITION_ENUM robotRotation;
 
     private PositionMapper(){}
 
@@ -24,4 +25,6 @@ public class PositionMapper {
     public IBlock getPosition(){
         return position;
     }
+
+    public POSITION_ENUM getRotation() { return robotRotation; }
 }

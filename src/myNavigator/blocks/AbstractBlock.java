@@ -1,22 +1,50 @@
 package myNavigator.blocks;
 
-public abstract class AbstractBlock implements IBlock {
-    private IBlock NORTH;
-    private IBlock EAST;
-    private IBlock SOUTH;
-    private IBlock WEST;
+import myNavigator.common.POSITION_ENUM;
+import org.jetbrains.annotations.NotNull;
 
-    AbstractBlock (){
-        NORTH =  new EmptyBlock();
-        EAST =  new EmptyBlock();
-        SOUTH =  new EmptyBlock();
-        WEST =  new EmptyBlock();
+import java.util.ArrayList;
+
+public abstract class AbstractBlock implements IBlock {
+    private IBlock North = null;
+    private IBlock East = null;
+    private IBlock South = null;
+    private IBlock West = null;
+
+    AbstractBlock (){}
+
+    public void linkUp(IBlock neighbor, POSITION_ENUM side){
+        linkUpNoSwap(neighbor,side);
+        neighbor.linkUpNoSwap(this,side.invertPosition());
     }
 
-    public void setNeighbors(IBlock north, IBlock east, IBlock south, IBlock west){
-        this.NORTH = north!= null ? north : NORTH;
-        this.EAST = east!= null ? east : EAST;
-        this.SOUTH = south!= null ? south : SOUTH;
-        this.WEST = west!= null ? west : WEST;
+    public void linkUpNoSwap(IBlock neighbor, @NotNull POSITION_ENUM side){
+        switch (side) {
+            case NORTH:
+                this.North = neighbor;
+                break;
+            case EAST:
+                this.East = neighbor;
+                break;
+            case SOUTH:
+                this.South = neighbor;
+                break;
+            case WEST:
+                this.West = neighbor;
+                break;
+        }
+    }
+
+    public ArrayList<IBlock> getNeighbors(){
+        ArrayList<IBlock> retList = new ArrayList<>();
+        if (North != null) retList.add(North);
+        if (East != null) retList.add(East);
+        if (South != null) retList.add(South);
+        if (West != null) retList.add(West);
+        return retList;
+    }
+
+    public String getNeighborsString(){
+        return "North: "+North+"  East: "+East+"  South: "+South+"  West: "+West;
     }
 }
