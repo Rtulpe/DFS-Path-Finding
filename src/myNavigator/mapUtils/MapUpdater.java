@@ -35,16 +35,8 @@ public class MapUpdater {
     }
 
     public void generateRandomMap(){
-        System.out.println(myMap.getXSize()+"amongus");
-
-
         for (int x = 0; x < myMap.getXSize(); x++){
             for (int y = 0; y < myMap.getYSize(); y++){
-                mapper.setPosition(x,y);
-                updateMap();
-            }
-            x++;
-            for (int y = myMap.getYSize() - 1; y >= 0; y--){
                 mapper.setPosition(x,y);
                 updateMap();
             }

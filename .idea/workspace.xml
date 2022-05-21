@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Improved MyPath.">
+    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Rectangular Maps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MapUpdater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MapUpdater.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MyMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MyMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/Zone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/Zone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/PathMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/PathMaker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMaker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653169463597</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Rectangular Maps">
+      <created>1653175093971</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1653175093971</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +173,7 @@
     <MESSAGE value="Made zones independent of blocks" />
     <MESSAGE value="Changeable starting position, made inner class Position into actual class" />
     <MESSAGE value="Improved MyPath." />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved MyPath." />
+    <MESSAGE value="Rectangular Maps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rectangular Maps" />
   </component>
 </project>
