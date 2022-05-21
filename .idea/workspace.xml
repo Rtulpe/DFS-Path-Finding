@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Added DFS pathfinding for path to home">
+    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Moved DFS algorithm into abstract class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetHomePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetHomePath.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653092523112</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Moved DFS algorithm into abstract class">
+      <created>1653153899660</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653153899660</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +142,7 @@
     <MESSAGE value="Brought ICoordinates back, switch from Nodal to 2d array based map implementation." />
     <MESSAGE value="Arbitrary map generation" />
     <MESSAGE value="Added DFS pathfinding for path to home" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DFS pathfinding for path to home" />
+    <MESSAGE value="Moved DFS algorithm into abstract class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved DFS algorithm into abstract class" />
   </component>
 </project>

@@ -1,36 +1,38 @@
 package myNavigator.mapUtils;
 
-import myNavigator.blocks.IBlock;
-
 import java.util.ArrayList;
 
 public class Zone {
     private String zoneName;
     private ArrayList<INSTRUCTION_ENUM> instructionList;
-    private ArrayList<IBlock> blockList;
+    int x1 = 0, x2 = 0, y1 = 0, y2 = 0;
 
     public Zone (String name, ArrayList<INSTRUCTION_ENUM> list){
         this.zoneName = name;
         this.instructionList = list;
     }
 
+    public Zone (String name, INSTRUCTION_ENUM instruction){
+        instructionList = new ArrayList<>();
+        instructionList.add(instruction);
+    }
+
     public void setInstructionList(ArrayList<INSTRUCTION_ENUM> list){
         this.instructionList = list;
     }
 
-    public void setBlockList(ArrayList<IBlock> blocks){
-        this.blockList = blocks;
+    public ArrayList<INSTRUCTION_ENUM> getInstructionList(){
+        return instructionList;
     }
 
-    public ArrayList<IBlock> getBlockList(){
-        return this.blockList;
+    public void setBounds(int x1, int y1, int x2, int y2){
+        this.x1 = x1;
+        this.x2 = x2;
+        this.y1 = y1;
+        this.y2 = y2;
     }
 
-    public ArrayList<IBlock> searchForBlocks(IBlock blockType){
-        ArrayList<IBlock> retList = new ArrayList<>();
-        for (IBlock iBlock : blockList) {
-            if (iBlock.getClass() == blockType.getClass()) retList.add(iBlock);
-        }
-    return retList;
+    public boolean isInBounds(int x, int y){
+        return (x>=x1&&x<=x2)&&(y>=y1&&y<=y2);
     }
 }

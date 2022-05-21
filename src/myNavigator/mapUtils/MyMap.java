@@ -6,35 +6,19 @@ import myNavigator.blocks.IBlock;
 import java.util.ArrayList;
 
 public class MyMap {
-    private String mapName;
+    private final String mapName;
     private ArrayList<Zone> zoneList;
-    private IBlock homeBlock;
-    private IBlock[][] map;
-
-    public MyMap(String name, IBlock[][] mapInput){
-        this.mapName = name;
-        this.map = mapInput;
-        setHome();
-    }
+    private final IBlock[][] map;
 
     public MyMap(String name, int size){
         this.mapName = name;
         this.map = new IBlock[size][size];
+        Zone defaultZone = new Zone("default",INSTRUCTION_ENUM.NULL);
+        defaultZone.setBounds(0,0,size,size);
     }
 
-    void setHome() {
-        try{
-            IBlock home;
-            ArrayList<IBlock> tmpList = new ArrayList<>();
-            for (Zone zone : zoneList) {
-                tmpList.addAll(zone.searchForBlocks(new HomeBlock()));
-            }
-            if (tmpList.size() != 1)throw new RuntimeException();
-            else home = tmpList.get(0);
-
-        } catch (Exception e){
-            System.out.println("Unable to set home : " + e.getMessage());
-        }
+    public void setHome(int x, int y) {
+        map[x][y] = new HomeBlock();
     }
 
     public MyMap getMapCopy() throws CloneNotSupportedException {
@@ -60,14 +44,16 @@ public class MyMap {
 
     @Override
     public String toString(){
-        String outString = "";
+        StringBuilder outString = new StringBuilder();
+
+        outString.append(mapName).append("\n");
 
         for (IBlock[] iBlocks : map) {
             for (IBlock index : iBlocks) {
-                outString += index + " ";
+                outString.append(index).append(" ");
             }
-            outString += "\n";
+            outString.append("\n");
         }
-        return outString;
+        return outString.toString();
     }
 }

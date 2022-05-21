@@ -5,6 +5,7 @@ import myNavigator.common.PositionMapper;
 import myNavigator.mapUtils.MapUpdater;
 import myNavigator.mapUtils.MyMap;
 import myNavigator.pathUtils.GetCleanPath;
+import myNavigator.pathUtils.GetHomePath;
 import myNavigator.pathUtils.MyPath;
 
 public class Main {
@@ -47,9 +48,9 @@ public class Main {
             }
         }
         MyMap map = upd.getMap();
-        map.update(9,9, new HomeBlock());
+        map.setHome(9,9);
 
-        GetCleanPath path = new GetCleanPath();
+        GetHomePath path = new GetHomePath();
 
         System.out.println(map);
         MyPath path1 = path.getPath(map, mapper.getPosition());
