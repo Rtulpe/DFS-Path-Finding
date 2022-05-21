@@ -1,6 +1,8 @@
 package myNavigator.blocks;
 
-public class HomeBlock extends AbstractBlock {
+import myNavigator.common.ICoordinates;
+
+public class HomeBlock implements IBlock {
     @Override
     public String toString(){
         return "H";

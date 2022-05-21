@@ -1,9 +1,7 @@
 package myNavigator.mapUtils;
 
-import myNavigator.blocks.AbstractBlock;
 import myNavigator.blocks.HomeBlock;
 import myNavigator.blocks.IBlock;
-import myNavigator.common.POSITION_ENUM;
 
 import java.util.ArrayList;
 
@@ -54,6 +52,10 @@ public class MyMap {
 
     public IBlock get(int x, int y){
         return map[x][y];
+    }
+
+    public IBlock[][] get2DMap(){
+        return map;
     }
 
     @Override

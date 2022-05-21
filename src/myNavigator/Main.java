@@ -1,11 +1,11 @@
 package myNavigator;
 
 import myNavigator.blocks.*;
-import myNavigator.common.POSITION_ENUM;
 import myNavigator.common.PositionMapper;
-import myNavigator.common.RadarInfo;
 import myNavigator.mapUtils.MapUpdater;
 import myNavigator.mapUtils.MyMap;
+import myNavigator.pathUtils.GetCleanPath;
+import myNavigator.pathUtils.MyPath;
 
 public class Main {
     public static void main(String [] args){
@@ -46,6 +46,12 @@ public class Main {
                 upd.updateMap();
             }
         }
-        System.out.println(upd.getMap());
+        MyMap map = upd.getMap();
+        map.update(9,9, new HomeBlock());
+
+        GetCleanPath path = new GetCleanPath();
+
+        System.out.println(map);
+        MyPath path1 = path.getPath(map, mapper.getPosition());
     }
 }

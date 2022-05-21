@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Brought ICoordinates back, switch from Nodal to 2d array based map implementation.">
+    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Arbitrary map generation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/AbstractBlock.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/EmptyBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/EmptyBlock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/FloorBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/FloorBlock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/HomeBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/HomeBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/IBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/IBlock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/ObstacleBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/ObstacleBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/POSITION_ENUM.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/PositionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/PositionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/RadarInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/RadarInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MapUpdater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MapUpdater.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MyMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MyMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/MyPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/MyPath.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/AbstractBlock.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/EmptyBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/blocks/EmptyBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/FloorBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/blocks/FloorBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/HomeBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/blocks/HomeBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/IBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/blocks/IBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/ObstacleBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/blocks/ObstacleBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/POSITION_ENUM.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/common/PositionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/common/PositionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/RadarInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/common/RadarInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/MyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/MyPath.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653076441023</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Arbitrary map generation">
+      <created>1653083636985</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653083636985</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +143,7 @@
     <MESSAGE value="Fixed build errors" />
     <MESSAGE value="Changes in block handling" />
     <MESSAGE value="Brought ICoordinates back, switch from Nodal to 2d array based map implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Brought ICoordinates back, switch from Nodal to 2d array based map implementation." />
+    <MESSAGE value="Arbitrary map generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arbitrary map generation" />
   </component>
 </project>

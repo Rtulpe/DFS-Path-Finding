@@ -1,6 +1,8 @@
 package myNavigator.blocks;
 
-public class FloorBlock extends AbstractBlock {
+import myNavigator.common.ICoordinates;
+
+public class FloorBlock implements IBlock {
     @Override
     public String toString(){
         return "+";

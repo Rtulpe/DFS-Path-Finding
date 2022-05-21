@@ -15,11 +15,19 @@ public class MyPath {
         pathVector = new Vector<>();
     }
 
+    public MyPath(){
+        pathVector = new Vector<>();
+    }
+
     public void addPoint(IBlock point){
         pathVector.add(point);
     }
 
     public void removePoint(IBlock point){
         pathVector.remove(point);
+    }
+
+    public Vector<IBlock> getVector(){
+        return pathVector;
     }
 }

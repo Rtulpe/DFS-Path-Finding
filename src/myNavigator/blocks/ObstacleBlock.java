@@ -1,6 +1,8 @@
 package myNavigator.blocks;
 
-public class ObstacleBlock extends AbstractBlock {
+import myNavigator.common.ICoordinates;
+
+public class ObstacleBlock implements IBlock {
     @Override
     public String toString(){
         return "X";

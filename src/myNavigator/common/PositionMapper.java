@@ -2,10 +2,13 @@ package myNavigator.common;
 
 import myNavigator.blocks.IBlock;
 
+import java.util.ArrayList;
+
 public class PositionMapper extends ICoordinates {
     private static PositionMapper instance = null;
     private static IBlock position;
-    private static POSITION_ENUM robotRotation;
+    Integer xCoord = null;
+    Integer yCoord = null;
 
     private PositionMapper(){}
 
@@ -23,5 +26,16 @@ public class PositionMapper extends ICoordinates {
        // in here we would get the updated position
     }
 
-    public POSITION_ENUM getRotation() { return robotRotation; }
+    public ArrayList<Integer> getPosition(){
+        ArrayList<Integer> retList = new ArrayList<>();
+        retList.add(xCoord);
+        retList.add(yCoord);
+        return retList;
+    }
+
+    public void setPosition(int x, int y){
+        this.xCoord = x;
+        this.yCoord = y;
+
+    }
 }
