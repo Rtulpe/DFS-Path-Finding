@@ -13,6 +13,10 @@ public class PathMaker {
         this.mapper = PositionMapper.getInstance();
     }
 
+    public void setMap(MyMap mapIn){
+        this.map = mapIn;
+    }
+
     public MyPath requestPath(boolean isHomePath){
         pathStrategy = isHomePath ? new GetHomePath() : new GetCleanPath();
         return pathStrategy.getPath(map, mapper.x, mapper.y);

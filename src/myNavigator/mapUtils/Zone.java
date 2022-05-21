@@ -1,11 +1,14 @@
 package myNavigator.mapUtils;
 
+import myNavigator.common.MyPosition;
+
 import java.util.ArrayList;
 
 public class Zone {
     private String zoneName;
     private ArrayList<INSTRUCTION_ENUM> instructionList;
-    int x1 = 0, x2 = 0, y1 = 0, y2 = 0;
+    private MyPosition topBound;
+    private MyPosition bottomBound;
 
     public Zone (String name, ArrayList<INSTRUCTION_ENUM> list){
         this.zoneName = name;
@@ -25,14 +28,16 @@ public class Zone {
         return instructionList;
     }
 
-    public void setBounds(int x1, int y1, int x2, int y2){
-        this.x1 = x1;
-        this.x2 = x2;
-        this.y1 = y1;
-        this.y2 = y2;
+    public void setBounds(MyPosition top, MyPosition bottom){
+        topBound = top;
+        bottomBound = bottom;
     }
 
-    public boolean isInBounds(int x, int y){
-        return (x>=x1&&x<=x2)&&(y>=y1&&y<=y2);
+    public MyPosition getTopBound(){
+        return topBound;
+    }
+
+    public MyPosition getBottomBound(){
+        return bottomBound;
     }
 }

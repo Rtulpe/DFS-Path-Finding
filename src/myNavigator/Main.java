@@ -15,22 +15,9 @@ public class Main {
 
         PositionMapper mapper = PositionMapper.getInstance();
 
-        System.out.println(mapper);
-
-        for (int x = 0; x < 10; x++){
-            for (int y =0; y < 10; y++){
-                mapper.setPosition(x,y);
-                upd.updateMap();
-            }
-            x++;
-            for (int y = 9; y >= 0; y--){
-                mapper.setPosition(x,y);
-                upd.updateMap();
-            }
-        }
-
         mapper.setPosition(5,5);
 
+        upd.generateRandomMap();
         MyMap map = upd.getMap();
         map.setHome(9,9);
 
@@ -39,6 +26,16 @@ public class Main {
         System.out.println(map);
         PathMaker maker = new PathMaker(map);
 
+        mapper.setPosition(4,4);
+        System.out.println(maker.requestPath(true));
+
+        MapUpdater nupd = new MapUpdater(10,6);
+        nupd.generateRandomMap();
+        MyMap otherMap = nupd.getMap();
+
+        otherMap.setHome(1,2);
+        System.out.println(otherMap);
+        maker.setMap(otherMap);
         System.out.println(maker.requestPath(true));
     }
 }

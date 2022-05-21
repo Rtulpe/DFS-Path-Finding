@@ -23,10 +23,32 @@ public class MapUpdater {
     }
 
     public MapUpdater(int size){
-        this.myMap = new MyMap("Default Map", size);
+        this.myMap = new MyMap("Default Square Map", size);
         this.info = RadarInfo.getInstance();
         this.mapper = PositionMapper.getInstance();
-        System.out.println(mapper);
+    }
+
+    public MapUpdater(int xSize, int ySize){
+        this.myMap = new MyMap("Default Rectangle Map",xSize,ySize);
+        this.info = RadarInfo.getInstance();
+        this.mapper = PositionMapper.getInstance();
+    }
+
+    public void generateRandomMap(){
+        System.out.println(myMap.getXSize()+"amongus");
+
+
+        for (int x = 0; x < myMap.getXSize(); x++){
+            for (int y = 0; y < myMap.getYSize(); y++){
+                mapper.setPosition(x,y);
+                updateMap();
+            }
+            x++;
+            for (int y = myMap.getYSize() - 1; y >= 0; y--){
+                mapper.setPosition(x,y);
+                updateMap();
+            }
+        }
     }
 
     public void updateMap(){
