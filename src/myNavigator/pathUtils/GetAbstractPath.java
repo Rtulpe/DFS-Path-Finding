@@ -3,6 +3,7 @@ package myNavigator.pathUtils;
 import myNavigator.blocks.FloorBlock;
 import myNavigator.blocks.HomeBlock;
 import myNavigator.blocks.IBlock;
+import myNavigator.common.MyPosition;
 
 import java.util.Stack;
 
@@ -12,53 +13,14 @@ import java.util.Stack;
  */
 public abstract class GetAbstractPath {
     IBlock[][] matrix;
-    Position[] shortestPath;
-    Stack<Position> path;
-    Position start;
-
-    static class Position {
-        public int x;
-        public int y;
-
-        public Position(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-
-        @Override
-        public int hashCode() {
-            final int prime = 31;
-            int result = 1;
-            result = prime * result + x;
-            result = prime * result + y;
-            return result;
-        }
-
-        @Override
-        public boolean equals(Object obj) {
-            if (this == obj)
-                return true;
-            if (obj == null)
-                return false;
-            if (getClass() != obj.getClass())
-                return false;
-            Position other = (Position) obj;
-            if (x != other.x)
-                return false;
-            return y == other.y;
-        }
-
-        @Override
-        public String toString() {
-            return "[" + x + "," + y + "]";
-        }
-    }
+    MyPosition[] shortestPath;
+    Stack<MyPosition> path;
+    MyPosition start;
 
     static class VisitedBlock implements IBlock {
     }
 
-    public Position[] getPathDFS() {
-        findStart();
+    public MyPosition[] getPathDFS() {
         path = new Stack<>();
         shortestPath = null;
 
@@ -69,39 +31,39 @@ public abstract class GetAbstractPath {
         return shortestPath;
     }
 
-    private void next(Position position) {
+    private void next(MyPosition position) {
         stepForward(position);
 
         if (shortestPath == null || path.size() < shortestPath.length) {
             if (!endFound(position)) {
-                Position nextPosition = new Position(position.x + 1, position.y);
+                MyPosition nextPosition = new MyPosition(position.x + 1, position.y);
                 if (isVisitable(nextPosition)) {
                     next(nextPosition);
                 }
 
-                nextPosition = new Position(position.x, position.y + 1);
+                nextPosition = new MyPosition(position.x, position.y + 1);
                 if (isVisitable(nextPosition)) {
                     next(nextPosition);
                 }
 
-                nextPosition = new Position(position.x - 1, position.y);
+                nextPosition = new MyPosition(position.x - 1, position.y);
                 if (isVisitable(nextPosition)) {
                     next(nextPosition);
                 }
 
-                nextPosition = new Position(position.x, position.y - 1);
+                nextPosition = new MyPosition(position.x, position.y - 1);
                 if (isVisitable(nextPosition)) {
                     next(nextPosition);
                 }
             } else {
-                shortestPath = path.toArray(new Position[0]);
+                shortestPath = path.toArray(new MyPosition[0]);
             }
         }
 
         stepBack();
     }
 
-    private boolean isVisitable(Position position) {
+    private boolean isVisitable(MyPosition position) {
         return position.y >= 0
                 && position.x >= 0
                 && position.y < matrix.length
@@ -109,11 +71,11 @@ public abstract class GetAbstractPath {
                 && (matrix[position.y][position.x].getClass() == FloorBlock.class || endFound(position));
     }
 
-    private boolean endFound(Position position) {
+    private boolean endFound(MyPosition position) {
         return matrix[position.y][position.x].getClass() == HomeBlock.class;
     }
 
-    private void stepForward(Position position) {
+    private void stepForward(MyPosition position) {
         path.push(position);
         if (matrix[position.y][position.x].getClass() == FloorBlock.class) {
             matrix[position.y][position.x] = new VisitedBlock();
@@ -121,16 +83,16 @@ public abstract class GetAbstractPath {
     }
 
     private void stepBack() {
-        Position position = path.pop();
+        MyPosition position = path.pop();
         if (matrix[position.y][position.x].getClass() == VisitedBlock.class) {
             matrix[position.y][position.x] = new FloorBlock();
         }
     }
 
-    private void findStart() {
+    void findStart(int x, int y) {
         if (start != null) {
             return;
         }
-        start = new Position(0,0);
+        start = new MyPosition(x,y);
     }
 }

@@ -4,13 +4,12 @@ import myNavigator.blocks.IBlock;
 
 import java.util.ArrayList;
 
-public class PositionMapper extends ICoordinates {
+public class PositionMapper extends MyPosition {
     private static PositionMapper instance = null;
-    private static IBlock position;
-    Integer xCoord = null;
-    Integer yCoord = null;
 
-    private PositionMapper(){}
+    private PositionMapper(){
+        super(0,0);
+    }
 
     public static PositionMapper getInstance(){
         if (instance == null) instance = new PositionMapper();
@@ -26,16 +25,8 @@ public class PositionMapper extends ICoordinates {
        // in here we would get the updated position
     }
 
-    public ArrayList<Integer> getPosition(){
-        ArrayList<Integer> retList = new ArrayList<>();
-        retList.add(xCoord);
-        retList.add(yCoord);
-        return retList;
-    }
-
     public void setPosition(int x, int y){
-        this.xCoord = x;
-        this.yCoord = y;
-
+        this.x = x;
+        this.y = y;
     }
 }

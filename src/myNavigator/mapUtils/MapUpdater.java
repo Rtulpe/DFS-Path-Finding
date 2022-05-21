@@ -30,8 +30,8 @@ public class MapUpdater {
     }
 
     public void updateMap(){
-        int x = mapper.getPosition().get(0);
-        int y = mapper.getPosition().get(1);
+        int x = mapper.x;
+        int y = mapper.y;
         short data = info.getData();
 
         IBlock block = data < 10 ? new EmptyBlock() : data > 200 ? new ObstacleBlock() : new FloorBlock();

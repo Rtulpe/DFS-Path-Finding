@@ -15,6 +15,6 @@ public class PathMaker {
 
     public MyPath requestPath(boolean isHomePath){
         pathStrategy = isHomePath ? new GetHomePath() : new GetCleanPath();
-        return pathStrategy.getPath(map, mapper.getPosition());
+        return pathStrategy.getPath(map, mapper.x, mapper.y);
     }
 }

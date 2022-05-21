@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Moved DFS algorithm into abstract class">
+    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Made zones independent of blocks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MapUpdater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MapUpdater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath$Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath$VisitedBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath$VisitedBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetHomePath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetHomePath.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/PositionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/common/PositionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetAbstractPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetAbstractPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetHomePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetHomePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMakerStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMakerStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653153899660</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Made zones independent of blocks">
+      <created>1653157588600</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653157588601</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +160,7 @@
     <MESSAGE value="Arbitrary map generation" />
     <MESSAGE value="Added DFS pathfinding for path to home" />
     <MESSAGE value="Moved DFS algorithm into abstract class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved DFS algorithm into abstract class" />
+    <MESSAGE value="Made zones independent of blocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made zones independent of blocks" />
   </component>
 </project>
