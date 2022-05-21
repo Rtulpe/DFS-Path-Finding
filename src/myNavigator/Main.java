@@ -38,6 +38,7 @@ public class Main {
 
         System.out.println(map);
         PathMaker maker = new PathMaker(map);
-        maker.requestPath(true);
+
+        System.out.println(maker.requestPath(true));
     }
 }

@@ -1,14 +1,16 @@
 package myNavigator.pathUtils;
 
 import myNavigator.blocks.IBlock;
+import myNavigator.common.MyPosition;
 import myNavigator.mapUtils.INSTRUCTION_ENUM;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Vector;
 
 public class MyPath {
     private ArrayList<INSTRUCTION_ENUM> instructions;
-    private Vector<IBlock> pathVector;
+    private Vector<MyPosition> pathVector;
 
     public MyPath(ArrayList<INSTRUCTION_ENUM> instruction){
         this.instructions = instruction;
@@ -19,15 +21,27 @@ public class MyPath {
         pathVector = new Vector<>();
     }
 
-    public void addPoint(IBlock point){
-        pathVector.add(point);
+    void addPath(MyPosition[] path){
+        if (path == null){
+            return;
+        }
+        pathVector.addAll(Arrays.asList(path));
     }
 
-    public void removePoint(IBlock point){
-        pathVector.remove(point);
+    public int getPathLength(){
+        return pathVector.size();
     }
 
-    public Vector<IBlock> getVector(){
-        return pathVector;
+    public void setInstructions(ArrayList<INSTRUCTION_ENUM> instruction_enums){
+        this.instructions = instruction_enums;
+    }
+
+    public ArrayList<INSTRUCTION_ENUM> getInstructions(){
+        return this.instructions;
+    }
+
+    @Override
+    public String toString(){
+        return !pathVector.isEmpty() ? "Path:"+ pathVector.toString() : "No Path Found!";
     }
 }

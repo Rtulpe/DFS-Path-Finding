@@ -23,7 +23,7 @@ public class MapUpdater {
     }
 
     public MapUpdater(int size){
-        this.myMap = new MyMap("new Map", size);
+        this.myMap = new MyMap("Default Map", size);
         this.info = RadarInfo.getInstance();
         this.mapper = PositionMapper.getInstance();
         System.out.println(mapper);
