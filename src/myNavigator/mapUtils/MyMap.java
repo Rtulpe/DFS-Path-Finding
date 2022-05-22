@@ -42,6 +42,14 @@ public class MyMap {
         return (MyMap) this.clone();
     }
 
+    /**
+     * Update the block with different one
+     * Note: This happens to be inverse. I will not touch it
+     * as it breaks map generation for some reason
+     * @param x array row
+     * @param y array column
+     * @param block block to be added at the position
+     */
     public void update(int x, int y, IBlock block){
         map[x][y] = block;
     }
@@ -53,6 +61,10 @@ public class MyMap {
 
     public IBlock[][] get2DMap(){
         return map;
+    }
+
+    public IBlock getBlockAt(int x, int y){
+        return map[y][x];
     }
 
     public ArrayList<Zone> getZoneList() {

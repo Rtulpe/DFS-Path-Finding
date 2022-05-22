@@ -1,5 +1,6 @@
 package myNavigator.pathUtils;
 
+import myNavigator.blocks.HomeBlock;
 import myNavigator.mapUtils.MyMap;
 import myNavigator.common.MyPosition;
 
@@ -17,4 +18,9 @@ public class GetHomePath extends GetAbstractPath implements PathMakerStrategy{
 
         return myPath;
         }
+
+    @Override
+    boolean endFound(MyPosition position) {
+        return matrix[position.y][position.x].getClass() == HomeBlock.class;
+    }
 }

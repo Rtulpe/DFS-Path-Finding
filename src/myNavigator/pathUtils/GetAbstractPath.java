@@ -71,9 +71,7 @@ public abstract class GetAbstractPath {
                 && (matrix[position.y][position.x].getClass() == FloorBlock.class || endFound(position));
     }
 
-    private boolean endFound(MyPosition position) {
-        return matrix[position.y][position.x].getClass() == HomeBlock.class;
-    }
+    abstract boolean endFound(MyPosition position);
 
     private void stepForward(MyPosition position) {
         path.push(position);

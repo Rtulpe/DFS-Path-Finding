@@ -1,5 +1,6 @@
 package myNavigator.pathUtils;
 
+import myNavigator.common.MyPosition;
 import myNavigator.common.PositionMapper;
 import myNavigator.mapUtils.MyMap;
 
@@ -21,4 +22,5 @@ public class PathMaker {
         pathStrategy = isHomePath ? new GetHomePath() : new GetCleanPath();
         return pathStrategy.getPath(map, mapper.x, mapper.y);
     }
+
 }
