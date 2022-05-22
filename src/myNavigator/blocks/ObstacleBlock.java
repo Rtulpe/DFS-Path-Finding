@@ -1,5 +1,8 @@
 package myNavigator.blocks;
 
+/**
+ * Obstacle block, caused by radar signal returning fast.
+ */
 public class ObstacleBlock implements IBlock {
     @Override
     public String toString(){

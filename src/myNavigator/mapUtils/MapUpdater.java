@@ -14,7 +14,7 @@ public class MapUpdater {
 
     /**
      * This constructor would be used in Travel case
-     * @param inputMyMap
+     * @param inputMyMap use already generated map
      */
     public MapUpdater(MyMap inputMyMap){
         this.myMap = inputMyMap;
@@ -53,11 +53,14 @@ public class MapUpdater {
         checkOrCreate(x,y, block);
     }
 
+    /**
+     *
+     * @param x position
+     * @param y position
+     * @param block to be checked
+     */
     public void checkOrCreate(int x, int y, IBlock block){
-        if (myMap.check(x,y,block)){
-            return;
-        }
-        else {
+        if (!myMap.check(x,y,block)){
             myMap.update(x,y,block);
         }
     }

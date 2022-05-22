@@ -1,5 +1,9 @@
 package myNavigator.common;
 
+/**
+ * Basic coordinate unit used for navigation.
+ * Previously ICoordinate.
+ */
 public class MyPosition {
     public int x;
     public int y;

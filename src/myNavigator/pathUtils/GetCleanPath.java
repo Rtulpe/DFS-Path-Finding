@@ -41,7 +41,7 @@ public class GetCleanPath extends GetAbstractPath implements PathMakerStrategy{
                 destination = pointsToVisit.pop();
 
                 matrix[destination.x][destination.y] = new DestinationBlock();
-                setStart(startY,startX);
+                setStart(startX,startY);
 
                 MyPosition[] subPath = getPathDFS();
 
@@ -51,17 +51,15 @@ public class GetCleanPath extends GetAbstractPath implements PathMakerStrategy{
                         pointsToVisit.remove(myPosition);
                     }
                 }
-
                 myPath.addPath(subPath);
 
                 if (subPath != null) {
-                    startX = destination.x;
-                    startY = destination.y;
+                    startX = destination.y;
+                    startY = destination.x;
                 }
                 matrix[destination.x][destination.y] = new FloorBlock();
             }
         }
-
         return myPath;
     }
 

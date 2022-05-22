@@ -1,5 +1,10 @@
 package myNavigator.common;
 
+/**
+ * Responsible for tracking robot's position relative to the map.
+ * This class is a singleton, as changes in Robot's position
+ * should reflect on all other classes using the singular object.
+ */
 public class PositionMapper extends MyPosition {
     private static PositionMapper instance = null;
 
@@ -21,6 +26,11 @@ public class PositionMapper extends MyPosition {
        // in here we would get the updated position
     }
 
+    /**
+     * Used for artificially "moving" the robot.
+     * @param x X position
+     * @param y Y position
+     */
     public void setPosition(int x, int y){
         this.x = x;
         this.y = y;

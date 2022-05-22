@@ -2,6 +2,11 @@ package myNavigator.common;
 
 import java.util.Random;
 
+/**
+ * Used for getting radar data.
+ * This class is a singleton, in order to avoid
+ * reading conflicting data.
+ */
 public class RadarInfo {
     private static RadarInfo instance = null;
     private static short data;

@@ -1,5 +1,8 @@
 package myNavigator.blocks;
 
+/**
+ * Unknown block, caused by radar signal not returning.
+ */
 public class EmptyBlock implements IBlock {
 
     @Override

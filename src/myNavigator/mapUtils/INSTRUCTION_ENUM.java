@@ -1,5 +1,8 @@
 package myNavigator.mapUtils;
 
+/**
+ * Enum for specifying cleaning instructions
+ */
 public enum INSTRUCTION_ENUM {
     NO_GO(0x0),
     HARD_CLEAN(0x1),
@@ -14,6 +17,11 @@ public enum INSTRUCTION_ENUM {
         this.hexCode = code;
     }
 
+    /**
+     * Hex values are used, since communication with the app
+     * will be done in a unsigned byte-stream.
+     * @return hex value of enum
+     */
     public int getHex(){
         return hexCode;
     }
