@@ -53,13 +53,18 @@ public class GetCleanPath extends GetAbstractPath implements PathMakerStrategy{
             while (!pointsToVisit.isEmpty()){
                 destination = pointsToVisit.pop();
 
+                //Marks Destination and start
                 matrix[destination.x][destination.y] = new DestinationBlock();
                 setStart(startX,startY);
 
+                //Gets Path
                 MyPosition[] subPath = getPathDFS();
 
+                //Path post-processing
                 if (subPath!=null) {
+                    //Removes duplicate finish-start position
                     subPath = Arrays.copyOf(subPath, subPath.length - 1);
+                    //Removes visited points
                     for (MyPosition myPosition : subPath) {
                         pointsToVisit.remove(myPosition);
                     }

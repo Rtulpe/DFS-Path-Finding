@@ -74,7 +74,7 @@ public class MyPath {
         int i = 0;
         if (pathVector.isEmpty()) return "No Path Found!\n";
 
-        for (Vector<MyPosition> myPositions : pathVector) {
+        for (Vector<MyPosition> ignored : pathVector) {
             retString.append("Zone: ").append(i).append("\n");
             retString.append("With instructions: ").append(instructions.get(i)).append("\n");
             retString.append(pathVector.get(i));
