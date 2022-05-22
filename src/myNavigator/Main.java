@@ -38,7 +38,9 @@ public class Main {
         otherMap.setHome(1,2);
         System.out.println(otherMap);
         maker.setMap(otherMap);
-        mapper.setPosition(0,0);
+        mapper.setPosition(1,0);
         System.out.println(maker.requestPath(true));
+
+        System.out.println(maker.requestPath(false));
     }
 }

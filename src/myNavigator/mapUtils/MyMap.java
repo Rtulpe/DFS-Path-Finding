@@ -21,6 +21,8 @@ public class MyMap {
 
 
         defaultZone.setBounds(topBound,bottomBound);
+        zoneList = new ArrayList<>();
+        zoneList.add(defaultZone);
     }
 
     public MyMap(String name, int x, int y){
@@ -32,6 +34,8 @@ public class MyMap {
         MyPosition bottomBound = new MyPosition(x,y);
 
         defaultZone.setBounds(topBound,bottomBound);
+        zoneList = new ArrayList<>();
+        zoneList.add(defaultZone);
     }
 
     public void setHome(int x, int y) {
@@ -64,7 +68,7 @@ public class MyMap {
     }
 
     public IBlock getBlockAt(int x, int y){
-        return map[y][x];
+        return map[x][y];
     }
 
     public ArrayList<Zone> getZoneList() {

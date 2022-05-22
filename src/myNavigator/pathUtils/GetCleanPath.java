@@ -8,7 +8,8 @@ import myNavigator.mapUtils.MyMap;
 import myNavigator.mapUtils.Zone;
 
 import java.util.ArrayList;
-import java.util.Vector;
+import java.util.Arrays;
+import java.util.Stack;
 
 public class GetCleanPath extends GetAbstractPath implements PathMakerStrategy{
 
@@ -16,25 +17,61 @@ public class GetCleanPath extends GetAbstractPath implements PathMakerStrategy{
     public MyPath getPath(MyMap map, int x, int y) {
         matrix = map.get2DMap();
         ArrayList<Zone> zoneList = map.getZoneList();
-        Vector<IBlock> pointsToVisit = new Vector<>();
-
+        Stack<MyPosition> pointsToVisit = new Stack<>();
         MyPosition topBound;
         MyPosition bottomBound;
+        MyPath myPath = new MyPath();
+
+        int startX = x;
+        int startY = y;
 
         for (Zone zone : zoneList) {
             topBound = zone.getTopBound();
             bottomBound = zone.getBottomBound();
             pointsToVisit.clear();
 
-            for (int i = topBound.x; i < bottomBound.x; i++){
-                for (int j = topBound.y; j < bottomBound.y; j++)
+            for (int i = topBound.y; i < bottomBound.y; i++){
+                for (int j = topBound.x; j < bottomBound.x; j++)
                 {
-                   if (map.getBlockAt(i,j).getClass()== FloorBlock.class) pointsToVisit.add(matrix[i][j]);
+                   if (map.getBlockAt(i,j).getClass()== FloorBlock.class && (!matrix[i][j].equals(matrix[x][y]))) pointsToVisit.add(new MyPosition(i,j));
                 }
-                if (map.getBlockAt(x,y).getClass()==FloorBlock.class) pointsToVisit.remove(map.getBlockAt(x,y));
+            }
+
+            MyPosition destination;
+
+            while (!pointsToVisit.isEmpty()){
+                destination = pointsToVisit.pop();
+
+                System.out.println(""+startY+" "+ startX);
+                System.out.println(destination);
+
+                matrix[destination.x][destination.y] = new DestinationBlock();
+                setStart(startY,startX);
+
+                MyPosition[] subPath = getPathDFS();
+
+                if (subPath!=null) {
+                    subPath = Arrays.copyOf(subPath, subPath.length - 1);
+                    for (MyPosition myPosition : subPath) {
+                        if (pointsToVisit.contains(myPosition))pointsToVisit.remove(myPosition);
+                    }
+                }
+
+                MyPath tmp = new MyPath();
+                tmp.addPath(subPath);
+                System.out.println(tmp);
+
+                myPath.addPath(subPath);
+
+                if (subPath != null) {
+                    startX = destination.x;
+                    startY = destination.y;
+                }
+                matrix[destination.x][destination.y] = new FloorBlock();
             }
         }
-        return null;
+
+        return myPath;
     }
 
     static class DestinationBlock extends FloorBlock{

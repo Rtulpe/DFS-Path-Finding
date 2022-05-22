@@ -87,6 +87,10 @@ public abstract class GetAbstractPath {
         }
     }
 
+    void setStart(int x, int y) {
+        start = new MyPosition(x,y);
+    }
+
     void findStart(int x, int y) {
         if (start != null) {
             return;
