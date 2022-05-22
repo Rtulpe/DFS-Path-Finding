@@ -8,10 +8,17 @@ package myNavigator.common;
 public class PositionMapper extends MyPosition {
     private static PositionMapper instance = null;
 
+    /**
+     * Instantiates with position set to 0:0;
+     */
     private PositionMapper(){
         super(0,0);
     }
 
+    /**
+     *
+     * @return single instance of the class
+     */
     public static PositionMapper getInstance(){
         if (instance == null) instance = new PositionMapper();
         return instance;

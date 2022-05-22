@@ -8,6 +8,11 @@ public class MyPosition {
     public int x;
     public int y;
 
+    /**
+     * Constructor
+     * @param x position
+     * @param y position
+     */
     public MyPosition(int x, int y) {
         this.x = x;
         this.y = y;

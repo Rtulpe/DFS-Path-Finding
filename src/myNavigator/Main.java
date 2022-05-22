@@ -3,11 +3,10 @@ package myNavigator;
 import myNavigator.common.PositionMapper;
 import myNavigator.mapUtils.MapUpdater;
 import myNavigator.mapUtils.MyMap;
-import myNavigator.pathUtils.GetHomePath;
 import myNavigator.pathUtils.PathMaker;
 
 /**
- * Main class of the Vertical Prototype for Use Cases SUC4 & SUC6
+ * Main class of the Vertical Prototype for Use Cases SUC4 and SUC6
  * @author Rustenis Tolpeznikas
  * @version 0.1.0
  */
