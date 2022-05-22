@@ -1,7 +1,6 @@
 package myNavigator.pathUtils;
 
 import myNavigator.blocks.FloorBlock;
-import myNavigator.blocks.HomeBlock;
 import myNavigator.blocks.IBlock;
 import myNavigator.common.MyPosition;
 

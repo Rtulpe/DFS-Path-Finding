@@ -1,6 +1,5 @@
 package myNavigator.pathUtils;
 
-import myNavigator.blocks.IBlock;
 import myNavigator.common.MyPosition;
 import myNavigator.mapUtils.INSTRUCTION_ENUM;
 
@@ -42,6 +41,6 @@ public class MyPath {
 
     @Override
     public String toString(){
-        return !pathVector.isEmpty() ? "Path:"+ pathVector.toString() : "No Path Found!";
+        return !pathVector.isEmpty() ? "Path:"+ pathVector : "No Path Found!";
     }
 }

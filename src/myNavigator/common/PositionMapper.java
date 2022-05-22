@@ -1,9 +1,5 @@
 package myNavigator.common;
 
-import myNavigator.blocks.IBlock;
-
-import java.util.ArrayList;
-
 public class PositionMapper extends MyPosition {
     private static PositionMapper instance = null;
 

@@ -1,7 +1,5 @@
 package myNavigator.blocks;
 
-import myNavigator.common.ICoordinates;
-
 public class EmptyBlock implements IBlock {
 
     @Override

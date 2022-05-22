@@ -16,6 +16,7 @@ public class Zone {
     }
 
     public Zone (String name, INSTRUCTION_ENUM instruction){
+        this.zoneName = name;
         instructionList = new ArrayList<>();
         instructionList.add(instruction);
     }

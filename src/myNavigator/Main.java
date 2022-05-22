@@ -23,8 +23,6 @@ public class Main {
         MyMap map = upd.getMap();
         map.setHome(9,9);
 
-        GetHomePath path = new GetHomePath();
-
         System.out.println(map);
         PathMaker maker = new PathMaker(map);
 

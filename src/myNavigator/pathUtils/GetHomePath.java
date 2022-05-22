@@ -4,8 +4,6 @@ import myNavigator.blocks.HomeBlock;
 import myNavigator.mapUtils.MyMap;
 import myNavigator.common.MyPosition;
 
-import java.util.Arrays;
-
 public class GetHomePath extends GetAbstractPath implements PathMakerStrategy{
 
     @Override

@@ -1,8 +1,6 @@
 package myNavigator.pathUtils;
 
 import myNavigator.blocks.FloorBlock;
-import myNavigator.blocks.HomeBlock;
-import myNavigator.blocks.IBlock;
 import myNavigator.common.MyPosition;
 import myNavigator.mapUtils.MyMap;
 import myNavigator.mapUtils.Zone;
@@ -42,9 +40,6 @@ public class GetCleanPath extends GetAbstractPath implements PathMakerStrategy{
             while (!pointsToVisit.isEmpty()){
                 destination = pointsToVisit.pop();
 
-                System.out.println(""+startY+" "+ startX);
-                System.out.println(destination);
-
                 matrix[destination.x][destination.y] = new DestinationBlock();
                 setStart(startY,startX);
 
@@ -53,13 +48,9 @@ public class GetCleanPath extends GetAbstractPath implements PathMakerStrategy{
                 if (subPath!=null) {
                     subPath = Arrays.copyOf(subPath, subPath.length - 1);
                     for (MyPosition myPosition : subPath) {
-                        if (pointsToVisit.contains(myPosition))pointsToVisit.remove(myPosition);
+                        pointsToVisit.remove(myPosition);
                     }
                 }
-
-                MyPath tmp = new MyPath();
-                tmp.addPath(subPath);
-                System.out.println(tmp);
 
                 myPath.addPath(subPath);
 

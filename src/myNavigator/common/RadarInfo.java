@@ -20,7 +20,6 @@ public class RadarInfo {
      */
     private void refreshData(){
         Random random = new Random();
-        int min = 0;
         int max = 255;
 
         data = (short) random.nextInt(max + 1);
