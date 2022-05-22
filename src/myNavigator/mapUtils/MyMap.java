@@ -6,11 +6,20 @@ import myNavigator.common.MyPosition;
 
 import java.util.ArrayList;
 
+/**
+ * Map class. Consists of 2D IBlock array for map representation.
+ * @see IBlock
+ */
 public class MyMap {
     private final String mapName;
     private ArrayList<Zone> zoneList;
     private final IBlock[][] map;
 
+    /**
+     * Instantiates square map
+     * @param name name of map
+     * @param size x:x size of map
+     */
     public MyMap(String name, int size){
         this.mapName = name;
         this.map = new IBlock[size][size];
@@ -25,6 +34,12 @@ public class MyMap {
         zoneList.add(defaultZone);
     }
 
+    /**
+     * Instanciates x by y sized map
+     * @param name of the map
+     * @param x width
+     * @param y height
+     */
     public MyMap(String name, int x, int y){
         this.mapName = name;
         this.map = new IBlock[y][x];
@@ -58,6 +73,13 @@ public class MyMap {
         map[x][y] = block;
     }
 
+    /**
+     * Checks if certain type of Block at x:y exists
+     * @param x position
+     * @param y position
+     * @param block block type to be checked
+     * @return true - exists
+     */
     public boolean check(int x, int y, IBlock block){
         if (map[x][y]==null) return false;
         return map[x][y].getClass() == block.getClass();

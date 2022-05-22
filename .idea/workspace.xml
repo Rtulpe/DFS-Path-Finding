@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Not sure, but something changed">
+    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Added comments, minor fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/EmptyBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/EmptyBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/FloorBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/FloorBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/HomeBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/HomeBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/ObstacleBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/ObstacleBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/MyPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/MyPosition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/PositionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/PositionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/RadarInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/RadarInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/INSTRUCTION_ENUM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/INSTRUCTION_ENUM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MapUpdater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MapUpdater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath$VisitedBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath$VisitedBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath$DestinationBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath$DestinationBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetHomePath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetHomePath.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/MyPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/MyPath.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/EmptyBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/blocks/EmptyBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/FloorBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/blocks/FloorBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/HomeBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/blocks/HomeBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/IBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/blocks/IBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/ObstacleBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/blocks/ObstacleBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/MyPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/common/MyPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/PositionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/common/PositionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/RadarInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/common/RadarInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/INSTRUCTION_ENUM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/INSTRUCTION_ENUM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetAbstractPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetAbstractPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetHomePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetHomePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/MyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/MyPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMakerStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMakerStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653186437606</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added comments, minor fixes">
+      <created>1653226267654</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1653226267654</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +242,7 @@
     <MESSAGE value="Added working cleaning pathfinding." />
     <MESSAGE value="Cleaned up the code." />
     <MESSAGE value="Not sure, but something changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Not sure, but something changed" />
+    <MESSAGE value="Added comments, minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments, minor fixes" />
   </component>
 </project>

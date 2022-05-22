@@ -13,7 +13,7 @@ public class MapUpdater {
     private RadarInfo info;
 
     /**
-     * This constructor would be used in Travel case
+     * This constructor would be used in Travel case.
      * @param inputMyMap use already generated map
      */
     public MapUpdater(MyMap inputMyMap){
@@ -22,18 +22,30 @@ public class MapUpdater {
         this.mapper = PositionMapper.getInstance();
     }
 
+    /**
+     * Instantiate with new Square map.
+     * @param size of square
+     */
     public MapUpdater(int size){
         this.myMap = new MyMap("Default Square Map", size);
         this.info = RadarInfo.getInstance();
         this.mapper = PositionMapper.getInstance();
     }
 
+    /**
+     * Instantiate with new Rectangle map.
+     * @param xSize width
+     * @param ySize height
+     */
     public MapUpdater(int xSize, int ySize){
         this.myMap = new MyMap("Default Rectangle Map",xSize,ySize);
         this.info = RadarInfo.getInstance();
         this.mapper = PositionMapper.getInstance();
     }
 
+    /**
+     * Fills the map with random blocks
+     */
     public void generateRandomMap(){
         for (int x = 0; x < myMap.getXSize(); x++){
             for (int y = 0; y < myMap.getYSize(); y++){
@@ -43,6 +55,10 @@ public class MapUpdater {
         }
     }
 
+    /**
+     * Reads radar data and updates map based on
+     * Robot's position
+     */
     public void updateMap(){
         int x = mapper.x;
         int y = mapper.y;

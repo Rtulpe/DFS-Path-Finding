@@ -4,7 +4,7 @@ import myNavigator.common.PositionMapper;
 import myNavigator.mapUtils.MyMap;
 
 /**
- * Class responsible for selecting path-cleaning strategy
+ * Class responsible for selecting path finding strategy
  */
 public class PathMaker {
     MyMap map;
@@ -21,7 +21,7 @@ public class PathMaker {
     }
 
     /**
-     *
+     * Sets the path finding strategy.
      * @param isHomePath true - requests home path, false - requests cleaning path.
      * @return calculated path
      */

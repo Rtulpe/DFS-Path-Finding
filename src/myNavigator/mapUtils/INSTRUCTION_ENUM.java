@@ -1,5 +1,7 @@
 package myNavigator.mapUtils;
 
+import java.util.Locale;
+
 /**
  * Enum for specifying cleaning instructions
  */
@@ -24,5 +26,11 @@ public enum INSTRUCTION_ENUM {
      */
     public int getHex(){
         return hexCode;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "0x"+Integer.toHexString(getHex()).toUpperCase(Locale.ROOT)+"";
     }
     }

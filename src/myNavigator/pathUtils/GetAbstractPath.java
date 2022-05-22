@@ -16,9 +16,16 @@ public abstract class GetAbstractPath {
     Stack<MyPosition> path;
     MyPosition start;
 
+    /**
+     * Inner IBlock class, used to temporarily mark block as visited.
+     */
     static class VisitedBlock implements IBlock {
     }
 
+    /**
+     * Calls DFS algorithm
+     * @return path in MyPosition[] form
+     */
     public MyPosition[] getPathDFS() {
         path = new Stack<>();
         shortestPath = null;
@@ -30,6 +37,10 @@ public abstract class GetAbstractPath {
         return shortestPath;
     }
 
+    /**
+     * Steps to new position
+     * @param position new position to be visited
+     */
     private void next(MyPosition position) {
         stepForward(position);
 
@@ -62,6 +73,12 @@ public abstract class GetAbstractPath {
         stepBack();
     }
 
+    /**
+     * Checks if block is of type FloorBlock, thus
+     * could be visited.
+     * @param position to be checked
+     * @return true - can be visited
+     */
     private boolean isVisitable(MyPosition position) {
         return position.y >= 0
                 && position.x >= 0
@@ -70,8 +87,17 @@ public abstract class GetAbstractPath {
                 && (matrix[position.y][position.x].getClass() == FloorBlock.class || endFound(position));
     }
 
+    /**
+     * Implemented by child classes. Condition for ending the algorithm
+     * @param position to be checked
+     * @return true - end found
+     */
     abstract boolean endFound(MyPosition position);
 
+    /**
+     * Marks block as visited
+     * @param position to be marked as visited
+     */
     private void stepForward(MyPosition position) {
         path.push(position);
         if (matrix[position.y][position.x].getClass() == FloorBlock.class) {
@@ -79,6 +105,9 @@ public abstract class GetAbstractPath {
         }
     }
 
+    /**
+     * Steps back on the visited block
+     */
     private void stepBack() {
         MyPosition position = path.pop();
         if (matrix[position.y][position.x].getClass() == VisitedBlock.class) {

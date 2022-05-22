@@ -35,11 +35,16 @@ public class Main {
         MyMap otherMap = nUpd.getMap();
 
         otherMap.setHome(3,4);
+
+        System.out.println();
+
         System.out.println(otherMap);
         maker.setMap(otherMap);
         mapper.setPosition(1,0);
         System.out.println("Travel to Home:");
         System.out.println(maker.requestPath(true));
+
+        System.out.println();
 
         System.out.println("Clean Entire Map:");
         System.out.println(maker.requestPath(false));
