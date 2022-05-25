@@ -14,7 +14,7 @@ import java.util.Vector;
  *  its own cleaning path.
  */
 public class MyPath {
-    private ArrayList<ArrayList<INSTRUCTION_ENUM>> instructions;
+    private final ArrayList<ArrayList<INSTRUCTION_ENUM>> instructions;
     private final ArrayList<Vector<MyPosition>> pathVector;
     private Vector<MyPosition> singlePath = null;
 
@@ -50,6 +50,10 @@ public class MyPath {
         singlePath = null;
     }
 
+    /**
+     * Not used, but will be used for Travel Use Case
+     * @return length of the calculated path
+     */
     public int getPathLength(){
         return pathVector.size();
     }

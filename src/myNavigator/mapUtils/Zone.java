@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * specified instructions
  */
 public class Zone {
-    private String zoneName;
+    private final String zoneName;
     private ArrayList<INSTRUCTION_ENUM> instructionList;
     private MyPosition topBound;
     private MyPosition bottomBound;

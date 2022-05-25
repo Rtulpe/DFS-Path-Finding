@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class MyMap {
     private final String mapName;
-    private ArrayList<Zone> zoneList;
+    private final ArrayList<Zone> zoneList;
     private final IBlock[][] map;
 
     /**

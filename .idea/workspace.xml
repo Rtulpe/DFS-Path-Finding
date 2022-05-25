@@ -4,13 +4,14 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Extra Comments">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="More comments, JavaDoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/MyPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/common/MyPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/PositionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/common/PositionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/MyPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/MyPosition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/PositionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/PositionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/MyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/MyPath.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653235213815</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="More comments, JavaDoc">
+      <created>1653241189744</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1653241189745</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,6 +252,7 @@
     <MESSAGE value="Added comments, minor fixes" />
     <MESSAGE value="Improved instructions, multi-paths" />
     <MESSAGE value="Extra Comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extra Comments" />
+    <MESSAGE value="More comments, JavaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="More comments, JavaDoc" />
   </component>
 </project>

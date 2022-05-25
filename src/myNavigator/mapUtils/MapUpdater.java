@@ -9,8 +9,8 @@ import myNavigator.common.RadarInfo;
 
 public class MapUpdater {
     private MyMap myMap;
-    private PositionMapper mapper;
-    private RadarInfo info;
+    private final PositionMapper mapper;
+    private final RadarInfo info;
 
     /**
      * This constructor would be used in Travel case.
@@ -67,6 +67,14 @@ public class MapUpdater {
         IBlock block = data < 10 ? new EmptyBlock() : data > 200 ? new ObstacleBlock() : new FloorBlock();
 
         checkOrCreate(x,y, block);
+    }
+
+    /**
+     * Change the processed map.
+     * @param inputMap assigned map
+     */
+    public void changeMap(MyMap inputMap){
+        myMap = inputMap;
     }
 
     /**
