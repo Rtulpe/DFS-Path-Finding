@@ -10,7 +10,7 @@ import java.util.Stack;
  * Implementation of Deep First Search Algorithm
  * Based on code in: https://www.careercup.com/question?id=5725353829990400
  */
-public abstract class GetAbstractPath {
+public abstract class GetAbstractPath implements PathMakerStrategy {
     IBlock[][] matrix;
     MyPosition[] shortestPath;
     Stack<MyPosition> path;

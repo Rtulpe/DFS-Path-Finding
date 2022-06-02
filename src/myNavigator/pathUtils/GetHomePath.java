@@ -8,7 +8,7 @@ import myNavigator.common.MyPosition;
 /**
  * Strategy for getting the path to home
  */
-public class GetHomePath extends GetAbstractPath implements PathMakerStrategy{
+public class GetHomePath extends GetAbstractPath{
 
     /**
      * Using DFS algorithm, generate a path from x:y to home block

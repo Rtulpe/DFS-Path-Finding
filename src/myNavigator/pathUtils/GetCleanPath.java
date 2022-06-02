@@ -13,7 +13,7 @@ import java.util.Stack;
 /**
  * Strategy for getting cleaning path.
  */
-public class GetCleanPath extends GetAbstractPath implements PathMakerStrategy{
+public class GetCleanPath extends GetAbstractPath{
 
     @Override
     public MyPath getPath(MyMap map, int x, int y) {
