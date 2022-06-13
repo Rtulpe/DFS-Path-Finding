@@ -4,15 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Draft of Client and Server">
+    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Traveller implemented, RMI connection works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/server/PlatformServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/server/PlatformServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/server/Traveller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/server/Traveller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/server/mapUtils/MapUpdater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/server/mapUtils/MapUpdater.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/PlatformServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/PlatformServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Traveller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Traveller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/mapUtils/MapUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/mapUtils/MapUpdater.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -63,9 +56,22 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.AppClient">
+  <component name="RunManager" selected="Application.ClientUI">
     <configuration name="AppClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="myNavigator.client.AppClient" />
+      <module name="VerticalPrototype" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="myNavigator.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="myNavigator.client.ClientUI" />
       <module name="VerticalPrototype" />
       <extension name="coverage">
         <pattern>
@@ -99,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientUI" />
         <item itemvalue="Application.AppClient" />
         <item itemvalue="Application.PlatformServer" />
       </list>
@@ -288,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655132756189</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Traveller implemented, RMI connection works">
+      <created>1655140580628</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1655140580628</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -328,6 +342,7 @@
     <MESSAGE value="Beginning RMI implementation" />
     <MESSAGE value="generated .class" />
     <MESSAGE value="Draft of Client and Server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Draft of Client and Server" />
+    <MESSAGE value="Traveller implemented, RMI connection works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Traveller implemented, RMI connection works" />
   </component>
 </project>
