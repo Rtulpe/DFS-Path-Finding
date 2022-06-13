@@ -65,8 +65,8 @@ public class ClientUI extends JFrame implements IPrint {
                 {
                     try {
                         print(iTravel.getPathString(true));
-                    } catch (RemoteException ex) {
-                        ex.printStackTrace();
+                    } catch (Exception ex) {
+                        print("Please generate map and set home and robot positions!");
                     }
                 });
                 card1.add(button);
@@ -76,8 +76,8 @@ public class ClientUI extends JFrame implements IPrint {
                 {
                     try {
                         print(iTravel.getPathString(false));
-                    } catch (RemoteException ex) {
-                        ex.printStackTrace();
+                    } catch (Exception ex) {
+                        print("Please generate map and set home and robot positions!");
                     }
                 });
                 card1.add(button);
@@ -106,8 +106,8 @@ public class ClientUI extends JFrame implements IPrint {
                             print("Generating new map of dimensions: "+xText+":" + yText);
                             iTravel.createMap(Integer.parseInt(xText),Integer.parseInt(yText));
                             print(iTravel.getMapString());
-                        } catch (RemoteException ex) {
-                            ex.printStackTrace();
+                        } catch (Exception ex) {
+                            print("Please enter integers only!");
                         }
                     } else print("Empty Parameters!");
                     CardLayout cardLayout = (CardLayout) botPane.getLayout();
@@ -138,8 +138,8 @@ public class ClientUI extends JFrame implements IPrint {
                         try {
                             print("Home set to: "+xText+":" + yText);
                             iTravel.setHome(Integer.parseInt(xText),Integer.parseInt(yText));
-                        } catch (RemoteException ex) {
-                            ex.printStackTrace();
+                        } catch (Exception ex) {
+                            print("Use integers only and do not set home outside of map!");
                         }
                     } else print("Empty Parameters!");
                     CardLayout cardLayout = (CardLayout) botPane.getLayout();
@@ -169,8 +169,8 @@ public class ClientUI extends JFrame implements IPrint {
                         try {
                             print("Robot set to: "+xText+":" + yText);
                             iTravel.setPosition(Integer.parseInt(xText),Integer.parseInt(yText));
-                        } catch (RemoteException ex) {
-                            ex.printStackTrace();
+                        } catch (Exception ex) {
+                            print("Use integers only and do not put Robot outside of map!");
                         }
                     } else print("Empty Parameters!");
                     CardLayout cardLayout = (CardLayout) botPane.getLayout();
