@@ -3,7 +3,7 @@ package myNavigator.pathUtils;
 import myNavigator.blocks.HomeBlock;
 import myNavigator.mapUtils.INSTRUCTION_ENUM;
 import myNavigator.mapUtils.MyMap;
-import myNavigator.common.MyPosition;
+import myNavigator.commonUtils.MyPosition;
 
 /**
  * Strategy for getting the path to home

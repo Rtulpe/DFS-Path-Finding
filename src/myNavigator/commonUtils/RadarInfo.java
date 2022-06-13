@@ -1,4 +1,4 @@
-package myNavigator.common;
+package myNavigator.commonUtils;
 
 import java.util.Random;
 

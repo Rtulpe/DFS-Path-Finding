@@ -1,4 +1,4 @@
-package myNavigator.common;
+package myNavigator.commonUtils;
 
 /**
  * Responsible for tracking robot's position relative to the map.

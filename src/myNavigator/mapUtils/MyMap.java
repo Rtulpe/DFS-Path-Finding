@@ -2,7 +2,7 @@ package myNavigator.mapUtils;
 
 import myNavigator.blocks.HomeBlock;
 import myNavigator.blocks.IBlock;
-import myNavigator.common.MyPosition;
+import myNavigator.commonUtils.MyPosition;
 
 import java.util.ArrayList;
 

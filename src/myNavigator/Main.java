@@ -1,6 +1,6 @@
 package myNavigator;
 
-import myNavigator.common.PositionMapper;
+import myNavigator.commonUtils.PositionMapper;
 import myNavigator.mapUtils.MapUpdater;
 import myNavigator.mapUtils.MyMap;
 import myNavigator.pathUtils.PathMaker;
@@ -15,22 +15,29 @@ public class Main {
         System.out.println("Vertical Prototype: Map Generation and Path-Finding");
 
         MapUpdater upd = new MapUpdater(10);//Create 10x10 map
-
         PositionMapper mapper = PositionMapper.getInstance();
 
         upd.generateRandomMap();
+
         MyMap map = upd.getMap();
+
         map.setHome(9,9);//Put Home at 9:9
 
         System.out.println(map);
 
         PathMaker maker = new PathMaker(map);
+
+
         mapper.setPosition(4,4); //Put Robot at 4:4
         System.out.println("Travel to Home:");
         System.out.println(maker.requestPath(true));
 
         MapUpdater nUpd = new MapUpdater(10,6);
+
+
         nUpd.generateRandomMap();
+
+
         MyMap otherMap = nUpd.getMap();
 
         otherMap.setHome(3,4);

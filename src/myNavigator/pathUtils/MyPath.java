@@ -1,6 +1,6 @@
 package myNavigator.pathUtils;
 
-import myNavigator.common.MyPosition;
+import myNavigator.commonUtils.MyPosition;
 import myNavigator.mapUtils.INSTRUCTION_ENUM;
 
 import java.util.ArrayList;

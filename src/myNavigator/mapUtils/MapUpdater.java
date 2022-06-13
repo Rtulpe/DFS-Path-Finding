@@ -4,8 +4,8 @@ import myNavigator.blocks.EmptyBlock;
 import myNavigator.blocks.FloorBlock;
 import myNavigator.blocks.IBlock;
 import myNavigator.blocks.ObstacleBlock;
-import myNavigator.common.PositionMapper;
-import myNavigator.common.RadarInfo;
+import myNavigator.commonUtils.PositionMapper;
+import myNavigator.commonUtils.RadarInfo;
 
 public class MapUpdater {
     private MyMap myMap;

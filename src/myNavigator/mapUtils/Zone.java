@@ -1,6 +1,6 @@
 package myNavigator.mapUtils;
 
-import myNavigator.common.MyPosition;
+import myNavigator.commonUtils.MyPosition;
 
 import java.util.ArrayList;
 

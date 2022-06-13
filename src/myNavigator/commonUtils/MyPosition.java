@@ -1,4 +1,4 @@
-package myNavigator.common;
+package myNavigator.commonUtils;
 
 /**
  * Basic coordinate unit used for navigation.

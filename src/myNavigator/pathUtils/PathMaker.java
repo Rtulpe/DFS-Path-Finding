@@ -1,6 +1,6 @@
 package myNavigator.pathUtils;
 
-import myNavigator.common.PositionMapper;
+import myNavigator.commonUtils.PositionMapper;
 import myNavigator.mapUtils.MyMap;
 
 /**

@@ -4,12 +4,59 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Minor improvements">
+    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Simplified inheritance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MapUpdater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MapUpdater.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MyMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MyMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/Zone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/Zone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/MyPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/MyPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/docs/element-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/blocks/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/blocks/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/common/MyPosition.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/common/MyPosition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/common/PositionMapper.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/common/PositionMapper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/common/RadarInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/common/RadarInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/common/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/common/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/common/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/common/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/mapUtils/MapUpdater.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/mapUtils/MapUpdater.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/mapUtils/Zone.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/mapUtils/Zone.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/mapUtils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/mapUtils/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetAbstractPath.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetAbstractPath.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetCleanPath.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetCleanPath.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetHomePath.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetHomePath.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/MyPath.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/MyPath.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/PathMaker.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/PathMaker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetHomePath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetHomePath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/MyPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/commonUtils/MyPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/PositionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/commonUtils/PositionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/RadarInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/commonUtils/RadarInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetAbstractPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetAbstractPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetHomePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetHomePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/MyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/MyPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/PlatformServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/PlatformServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +73,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -37,6 +85,7 @@
   </component>
   <component name="ProjectId" id="29RCB0YCVCmXckx9dq7sE6CBcpF" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -222,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653509448172</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Simplified inheritance">
+      <created>1654172535015</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1654172535015</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,6 +314,7 @@
     <MESSAGE value="Extra Comments" />
     <MESSAGE value="More comments, JavaDoc" />
     <MESSAGE value="Minor improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor improvements" />
+    <MESSAGE value="Simplified inheritance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplified inheritance" />
   </component>
 </project>

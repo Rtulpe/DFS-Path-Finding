@@ -2,7 +2,7 @@ package myNavigator.pathUtils;
 
 import myNavigator.blocks.FloorBlock;
 import myNavigator.blocks.IBlock;
-import myNavigator.common.MyPosition;
+import myNavigator.commonUtils.MyPosition;
 
 import java.util.Stack;
 

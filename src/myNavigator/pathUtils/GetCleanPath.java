@@ -1,7 +1,7 @@
 package myNavigator.pathUtils;
 
 import myNavigator.blocks.FloorBlock;
-import myNavigator.common.MyPosition;
+import myNavigator.commonUtils.MyPosition;
 import myNavigator.mapUtils.INSTRUCTION_ENUM;
 import myNavigator.mapUtils.MyMap;
 import myNavigator.mapUtils.Zone;

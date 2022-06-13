@@ -1,5 +1,5 @@
 myNavigator
 myNavigator.blocks
-myNavigator.common
+myNavigator.commonUtils
 myNavigator.mapUtils
 myNavigator.pathUtils
