@@ -93,4 +93,8 @@ public class MapUpdater {
         return myMap;
     }
 
+    public void setHome(int x, int y){
+        myMap.setHome(x,y);
+    }
+
 }

@@ -14,6 +14,7 @@ public class PlatformServer {
     }
 
     public static void main(String [] args) throws Exception{
+        startRegistry();
         RemoteServer.setLog(System.err);
         ITraveller subject = new Traveller();
         Naming.rebind("subject",subject);
