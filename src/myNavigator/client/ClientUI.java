@@ -1,15 +1,15 @@
 package myNavigator.client;
 
-import myNavigator.common.IPrint;
 import myNavigator.common.ITraveler;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.rmi.Naming;
-import java.rmi.RemoteException;
 
-public class ClientUI extends JFrame implements IPrint {
+/**
+ * GUI implementation for the Client side of the Vertical Prototype
+ */
+public class ClientUI extends JFrame{
 
     private JTextArea textBox;
     private ITraveler iTravel;
@@ -21,12 +21,16 @@ public class ClientUI extends JFrame implements IPrint {
         makeFrame();
     }
 
+    /**
+     * Builds the GUI
+     */
     private void makeFrame(){
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         JPanel contentPane = (JPanel) getContentPane();
         contentPane.setBorder(new EmptyBorder(1,1,1,1));
 
+        // Changeable Pane
         JPanel botPane = new JPanel();
         {
             botPane.setLayout(new CardLayout());
@@ -36,7 +40,6 @@ public class ClientUI extends JFrame implements IPrint {
             {
                 card1.setLayout(new GridLayout(1,0));
                 JButton button = new JButton("Update Map");
-                //todo implement button
                 button.addActionListener(e ->
                 {
                     CardLayout cardLayout = (CardLayout) botPane.getLayout();
@@ -116,7 +119,7 @@ public class ClientUI extends JFrame implements IPrint {
                 card2.add(button);
             }
 
-            //Position Mapper
+            //Set Home
             JPanel card3 = new JPanel();
             {
                 card3.setLayout(new GridLayout(1,0));
@@ -148,6 +151,7 @@ public class ClientUI extends JFrame implements IPrint {
                 card3.add(button);
             }
 
+            // Position Mapper
             JPanel card4 = new JPanel();
             {
                 card4.setLayout(new GridLayout(1,0));
@@ -185,6 +189,7 @@ public class ClientUI extends JFrame implements IPrint {
             botPane.add(card4, "Robot");
         }
 
+        // Textbox
         JPanel topPane = new JPanel();
         {
             topPane.setLayout(new BorderLayout(8,8));
@@ -203,7 +208,10 @@ public class ClientUI extends JFrame implements IPrint {
         setVisible(true);
     }
 
-    @Override
+    /**
+     * Used for printing text into the textbox
+     * @param msg string to be printed
+     */
     public void print(String msg) {
         textBox.append(msg);
         textBox.append("\n");

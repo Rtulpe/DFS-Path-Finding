@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"myNavigator"},{"l":"myNavigator.blocks"},{"l":"myNavigator.common"},{"l":"myNavigator.mapUtils"},{"l":"myNavigator.pathUtils"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"myNavigator.client"},{"l":"myNavigator.common"},{"l":"myNavigator.server"},{"l":"myNavigator.server.blocks"},{"l":"myNavigator.server.commonUtils"},{"l":"myNavigator.server.mapUtils"},{"l":"myNavigator.server.pathUtils"}];updateSearchResults();
