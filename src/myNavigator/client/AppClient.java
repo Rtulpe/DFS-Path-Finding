@@ -1,12 +1,12 @@
 package myNavigator.client;
 
-import myNavigator.common.ITraveller;
+import myNavigator.common.ITraveler;
 
 import java.rmi.Naming;
 
 public class AppClient{
 public static void main(String[] args) throws Exception{
-    ITraveller subject = (ITraveller) Naming.lookup("rmi://127.0.0.1/subject");
+    ITraveler subject = (ITraveler) Naming.lookup("rmi://127.0.0.1/subject");
 
     subject.createMap(10);
     subject.setHome(9,9);

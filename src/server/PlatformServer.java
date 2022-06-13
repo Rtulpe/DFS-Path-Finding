@@ -1,6 +1,6 @@
 package server;
 
-import myNavigator.common.ITraveller;
+import myNavigator.common.ITraveler;
 
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
@@ -16,7 +16,7 @@ public class PlatformServer {
     public static void main(String [] args) throws Exception{
         startRegistry();
         RemoteServer.setLog(System.err);
-        ITraveller subject = new Traveller();
+        ITraveler subject = new Traveler();
         Naming.rebind("subject",subject);
     }
 }

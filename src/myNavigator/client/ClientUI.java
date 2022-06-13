@@ -1,26 +1,29 @@
 package myNavigator.client;
 
 import myNavigator.common.IPrint;
+import myNavigator.common.ITraveler;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.awt.print.PageFormat;
-import java.awt.print.Printable;
-import java.awt.print.PrinterException;
+import java.rmi.Naming;
+import java.rmi.RemoteException;
 
 public class ClientUI extends JFrame implements IPrint {
 
     private JTextArea textBox;
+    private ITraveler iTravel;
 
-    public static void main(String[] args){
-        ClientUI ui = new ClientUI();
+    public static void main(String[] args) throws Exception{
+        ITraveler subject = (ITraveler) Naming.lookup("rmi://127.0.0.1/subject");
+        ClientUI ui = new ClientUI(subject);
         ui.print("Hello!");
     }
 
-    public ClientUI(){
+    public ClientUI(ITraveler iTravel){
         super("Client");
         textBox = new JTextArea(10,20);
+        this.iTravel = iTravel;
         makeFrame();
     }
 
@@ -32,11 +35,85 @@ public class ClientUI extends JFrame implements IPrint {
 
         JPanel botPane = new JPanel();
         {
-            botPane.setLayout(new GridLayout(0,1));
+            botPane.setLayout(new CardLayout());
 
-            JButton button = new JButton("UpdateMap");
-            //todo implement button
-            botPane.add(button);
+            //Initial Screen
+            JPanel card1 = new JPanel();
+            {
+                card1.setLayout(new GridLayout(1,0));
+                JButton button = new JButton("Update Map");
+                //todo implement button
+                button.addActionListener(e ->
+                {
+                    CardLayout cardLayout = (CardLayout) botPane.getLayout();
+                    cardLayout.show(botPane,"Map");
+                });
+                card1.add(button);
+
+                button = new JButton("Set Home");
+                button.addActionListener(e ->
+                {
+                    CardLayout cardLayout = (CardLayout) botPane.getLayout();
+                    cardLayout.show(botPane,"Position");
+                });
+                card1.add(button);
+
+                button = new JButton("Get Home Path");
+                card1.add(button);
+
+                button = new JButton("Get Clean Path");
+                card1.add(button);
+            }
+
+            //Map Generation
+            JPanel card2 = new JPanel();
+            {
+                card2.setLayout(new GridLayout(1,0));
+
+                JButton button = new JButton("OK");
+                button.addActionListener(e ->
+                {
+                    CardLayout cardLayout = (CardLayout) botPane.getLayout();
+                    cardLayout.show(botPane,"General");
+                });
+                card2.add(button);
+            }
+
+            //Position Mapper
+            JPanel card3 = new JPanel();
+            {
+                card3.setLayout(new GridLayout(1,0));
+
+                JTextField xField = new JTextField();
+                xField.setToolTipText("X coordinate");
+                card3.add(xField);
+
+                JTextField yField = new JTextField();
+                yField.setToolTipText("Y coordinate");
+                card3.add(yField);
+
+                JButton button = new JButton("OK");
+                button.addActionListener(e ->
+                {
+                    String xText = xField.getText();
+                    String yText = yField.getText();
+                    if (!xText.isBlank() && !yText.isBlank()){
+                        try {
+                            print("Home set to: "+xText+":" + yText);
+                            iTravel.setPosition(Integer.parseInt(xText),Integer.parseInt(yText));
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
+                    } else print("Empty Parameters!");
+                    CardLayout cardLayout = (CardLayout) botPane.getLayout();
+                    cardLayout.show(botPane,"General");
+                });
+                card3.add(button);
+            }
+
+            botPane.add(card1,"General");
+            botPane.add(card2, "Map");
+            botPane.add(card3, "Position");
         }
 
         JPanel topPane = new JPanel();

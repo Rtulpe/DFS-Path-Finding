@@ -1,6 +1,6 @@
 package server;
 
-import myNavigator.common.ITraveller;
+import myNavigator.common.ITraveler;
 import server.commonUtils.PositionMapper;
 import server.mapUtils.MapUpdater;
 import server.pathUtils.PathMaker;
@@ -8,11 +8,11 @@ import server.pathUtils.PathMaker;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class Traveller extends UnicastRemoteObject  implements ITraveller {
+public class Traveler extends UnicastRemoteObject  implements ITraveler {
     private MapUpdater upd;
     private PositionMapper psm;
 
-    public Traveller() throws RemoteException {
+    public Traveler() throws RemoteException {
         psm = PositionMapper.getInstance();
         psm.setPosition(0,0);
     }

@@ -3,7 +3,7 @@ package myNavigator.common;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
-public interface ITraveller extends Remote {
+public interface ITraveler extends Remote {
     void createMap(int size) throws RemoteException;
     void createMap(int xSize, int ySize) throws RemoteException;
     void setHome(int x,int y) throws RemoteException;
