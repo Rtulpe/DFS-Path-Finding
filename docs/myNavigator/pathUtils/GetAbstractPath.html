@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="dc.created" content="2022-05-22">
-<meta name="description" content="declaration: package: myNavigator.pathUtils, class: GetAbstractPath">
+<meta name="description" content="declaration: package: server.pathUtils, class: GetAbstractPath">
 <meta name="generator" content="javadoc/ClassWriterImpl">
 <link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../script-dir/jquery-ui.min.css" title="Style">
@@ -87,16 +87,16 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">myNavigator.pathUtils</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">server.pathUtils</a></div>
 <h1 title="Class GetAbstractPath" class="title">Class GetAbstractPath</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance">myNavigator.pathUtils.GetAbstractPath</div>
+<div class="inheritance">server.pathUtils.GetAbstractPath</div>
 </div>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="GetCleanPath.html" title="class in myNavigator.pathUtils">GetCleanPath</a></code>, <code><a href="GetHomePath.html" title="class in myNavigator.pathUtils">GetHomePath</a></code></dd>
+<dd><code><a href="GetCleanPath.html" title="class in server.pathUtils">GetCleanPath</a></code>, <code><a href="GetHomePath.html" title="class in server.pathUtils">GetHomePath</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">GetAbstractPath</span>
@@ -116,7 +116,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Class</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>(package private) static class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="GetAbstractPath.VisitedBlock.html" class="type-name-link" title="class in myNavigator.pathUtils">GetAbstractPath.VisitedBlock</a></code></div>
+<div class="col-second even-row-color"><code><a href="GetAbstractPath.VisitedBlock.html" class="type-name-link" title="class in server.pathUtils">GetAbstractPath.VisitedBlock</a></code></div>
 <div class="col-last even-row-color">
 <div class="block">Inner IBlock class, used to temporarily mark block as visited.</div>
 </div>
@@ -132,16 +132,16 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>(package private) <a href="../blocks/IBlock.html" title="interface in myNavigator.blocks">IBlock</a>[][]</code></div>
+<div class="col-first even-row-color"><code>(package private) <a href="../blocks/IBlock.html" title="interface in server.blocks">IBlock</a>[][]</code></div>
 <div class="col-second even-row-color"><code><a href="#matrix" class="member-name-link">matrix</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>(package private) <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/Stack.html" title="class or interface in java.util" class="external-link">Stack</a>&lt;<a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>&gt;</code></div>
+<div class="col-first odd-row-color"><code>(package private) <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/Stack.html" title="class or interface in java.util" class="external-link">Stack</a>&lt;<a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#path" class="member-name-link">path</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>(package private) <a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>[]</code></div>
+<div class="col-first even-row-color"><code>(package private) <a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>[]</code></div>
 <div class="col-second even-row-color"><code><a href="#shortestPath" class="member-name-link">shortestPath</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>(package private) <a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a></code></div>
+<div class="col-first odd-row-color"><code>(package private) <a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#start" class="member-name-link">start</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 </div>
@@ -172,7 +172,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>(package private) abstract boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#endFound(myNavigator.commonUtils.MyPosition)" class="member-name-link">endFound</a><wbr>(<a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>&nbsp;position)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#endFound(server.commonUtils.MyPosition)" class="member-name-link">endFound</a><wbr>(<a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>&nbsp;position)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Implemented by child classes.</div>
 </div>
@@ -180,19 +180,19 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findStart(int,int)" class="member-name-link">findStart</a><wbr>(int&nbsp;x,
  int&nbsp;y)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>[]</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>[]</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPathDFS()" class="member-name-link">getPathDFS</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Calls DFS algorithm</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isVisitable(myNavigator.commonUtils.MyPosition)" class="member-name-link">isVisitable</a><wbr>(<a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>&nbsp;position)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isVisitable(server.commonUtils.MyPosition)" class="member-name-link">isVisitable</a><wbr>(<a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>&nbsp;position)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Checks if block is of type FloorBlock, thus
  could be visited.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#next(myNavigator.commonUtils.MyPosition)" class="member-name-link">next</a><wbr>(<a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>&nbsp;position)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#next(server.commonUtils.MyPosition)" class="member-name-link">next</a><wbr>(<a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>&nbsp;position)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Steps to new position</div>
 </div>
@@ -206,7 +206,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Steps back on the visited block</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#stepForward(myNavigator.commonUtils.MyPosition)" class="member-name-link">stepForward</a><wbr>(<a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>&nbsp;position)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#stepForward(server.commonUtils.MyPosition)" class="member-name-link">stepForward</a><wbr>(<a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>&nbsp;position)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Marks block as visited</div>
 </div>
@@ -230,25 +230,25 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="matrix">
 <h3>matrix</h3>
-<div class="member-signature"><span class="return-type"><a href="../blocks/IBlock.html" title="interface in myNavigator.blocks">IBlock</a>[][]</span>&nbsp;<span class="element-name">matrix</span></div>
+<div class="member-signature"><span class="return-type"><a href="../blocks/IBlock.html" title="interface in server.blocks">IBlock</a>[][]</span>&nbsp;<span class="element-name">matrix</span></div>
 </section>
 </li>
 <li>
 <section class="detail" id="shortestPath">
 <h3>shortestPath</h3>
-<div class="member-signature"><span class="return-type"><a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>[]</span>&nbsp;<span class="element-name">shortestPath</span></div>
+<div class="member-signature"><span class="return-type"><a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>[]</span>&nbsp;<span class="element-name">shortestPath</span></div>
 </section>
 </li>
 <li>
 <section class="detail" id="path">
 <h3>path</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/Stack.html" title="class or interface in java.util" class="external-link">Stack</a>&lt;<a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>&gt;</span>&nbsp;<span class="element-name">path</span></div>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/Stack.html" title="class or interface in java.util" class="external-link">Stack</a>&lt;<a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>&gt;</span>&nbsp;<span class="element-name">path</span></div>
 </section>
 </li>
 <li>
 <section class="detail" id="start">
 <h3>start</h3>
-<div class="member-signature"><span class="return-type"><a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a></span>&nbsp;<span class="element-name">start</span></div>
+<div class="member-signature"><span class="return-type"><a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a></span>&nbsp;<span class="element-name">start</span></div>
 </section>
 </li>
 </ul>
@@ -276,7 +276,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="getPathDFS()">
 <h3>getPathDFS</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>[]</span>&nbsp;<span class="element-name">getPathDFS</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>[]</span>&nbsp;<span class="element-name">getPathDFS</span>()</div>
 <div class="block">Calls DFS algorithm</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -285,9 +285,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="next(myNavigator.commonUtils.MyPosition)">
+<section class="detail" id="next(server.commonUtils.MyPosition)">
 <h3>next</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">next</span><wbr><span class="parameters">(<a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>&nbsp;position)</span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">next</span><wbr><span class="parameters">(<a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>&nbsp;position)</span></div>
 <div class="block">Steps to new position</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -296,9 +296,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="isVisitable(myNavigator.commonUtils.MyPosition)">
+<section class="detail" id="isVisitable(server.commonUtils.MyPosition)">
 <h3>isVisitable</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isVisitable</span><wbr><span class="parameters">(<a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>&nbsp;position)</span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isVisitable</span><wbr><span class="parameters">(<a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>&nbsp;position)</span></div>
 <div class="block">Checks if block is of type FloorBlock, thus
  could be visited.</div>
 <dl class="notes">
@@ -310,9 +310,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="endFound(myNavigator.commonUtils.MyPosition)">
+<section class="detail" id="endFound(server.commonUtils.MyPosition)">
 <h3>endFound</h3>
-<div class="member-signature"><span class="modifiers">abstract</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">endFound</span><wbr><span class="parameters">(<a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>&nbsp;position)</span></div>
+<div class="member-signature"><span class="modifiers">abstract</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">endFound</span><wbr><span class="parameters">(<a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>&nbsp;position)</span></div>
 <div class="block">Implemented by child classes. Condition for ending the algorithm</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -323,9 +323,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="stepForward(myNavigator.commonUtils.MyPosition)">
+<section class="detail" id="stepForward(server.commonUtils.MyPosition)">
 <h3>stepForward</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">stepForward</span><wbr><span class="parameters">(<a href="../common/MyPosition.html" title="class in myNavigator.commonUtils">MyPosition</a>&nbsp;position)</span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">stepForward</span><wbr><span class="parameters">(<a href="../common/MyPosition.html" title="class in server.commonUtils">MyPosition</a>&nbsp;position)</span></div>
 <div class="block">Marks block as visited</div>
 <dl class="notes">
 <dt>Parameters:</dt>

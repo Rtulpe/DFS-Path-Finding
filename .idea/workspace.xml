@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Simplified inheritance">
+    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="generated .class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allpackages-index.html" afterDir="false" />
@@ -12,51 +12,100 @@
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-10.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-12.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-13.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-14.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-15.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-18.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-21.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-9.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/blocks/EmptyBlock.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/blocks/EmptyBlock.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/blocks/FloorBlock.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/blocks/FloorBlock.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/blocks/HomeBlock.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/blocks/HomeBlock.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/blocks/IBlock.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/blocks/IBlock.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/blocks/ObstacleBlock.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/blocks/ObstacleBlock.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/blocks/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/blocks/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/blocks/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/blocks/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/common/MyPosition.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/common/MyPosition.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/common/PositionMapper.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/common/PositionMapper.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/common/RadarInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/common/RadarInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/common/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/common/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/common/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/common/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/mapUtils/INSTRUCTION_ENUM.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/mapUtils/INSTRUCTION_ENUM.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/mapUtils/MapUpdater.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/mapUtils/MapUpdater.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/mapUtils/MyMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/mapUtils/MyMap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/mapUtils/Zone.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/mapUtils/Zone.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/mapUtils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/mapUtils/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/mapUtils/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/mapUtils/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetAbstractPath.VisitedBlock.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetAbstractPath.VisitedBlock.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetAbstractPath.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetAbstractPath.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetCleanPath.DestinationBlock.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetCleanPath.DestinationBlock.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetCleanPath.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetCleanPath.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetHomePath.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/GetHomePath.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/MyPath.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/MyPath.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/PathMaker.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/PathMaker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/PathMakerStrategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/PathMakerStrategy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/myNavigator/pathUtils/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/myNavigator/pathUtils/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetHomePath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetHomePath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/MyPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/commonUtils/MyPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/PositionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/commonUtils/PositionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/RadarInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/commonUtils/RadarInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetAbstractPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetAbstractPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetHomePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetHomePath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/MyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/MyPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/EmptyBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/FloorBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/HomeBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/IBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/blocks/ObstacleBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/commonUtils/MyPosition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/commonUtils/PositionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/commonUtils/RadarInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/INSTRUCTION_ENUM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MapUpdater.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/MyMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/mapUtils/Zone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath$VisitedBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetAbstractPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath$DestinationBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetCleanPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/GetHomePath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/MyPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/PathMaker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/pathUtils/PathMakerStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/server/PlatformServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/server/PlatformServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/EmptyBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/blocks/EmptyBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/FloorBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/blocks/FloorBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/HomeBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/blocks/HomeBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/IBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/blocks/IBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/blocks/ObstacleBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/blocks/ObstacleBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/client/AppClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/client/AppClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/commonUtils/MyPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commonUtils/MyPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/commonUtils/PositionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commonUtils/PositionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/commonUtils/RadarInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commonUtils/RadarInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/INSTRUCTION_ENUM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/mapUtils/INSTRUCTION_ENUM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MapUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/mapUtils/MapUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/mapUtils/MyMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/mapUtils/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/mapUtils/Zone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetAbstractPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/pathUtils/GetAbstractPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetCleanPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/pathUtils/GetCleanPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/GetHomePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/pathUtils/GetHomePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/MyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/pathUtils/MyPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/pathUtils/PathMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myNavigator/pathUtils/PathMakerStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/pathUtils/PathMakerStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/PlatformServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/PlatformServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Traveller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Traveller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +116,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -108,7 +158,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="myNavigator.Main" />
+      <option name="MAIN_CLASS_NAME" value="myNavigator.client.Main" />
       <module name="VerticalPrototype" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -278,7 +328,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654172535015</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Beginning RMI implementation">
+      <created>1655127997270</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1655127997270</updated>
+    </task>
+    <task id="LOCAL-00024" summary="generated .class">
+      <created>1655128034971</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1655128034971</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,6 +379,8 @@
     <MESSAGE value="More comments, JavaDoc" />
     <MESSAGE value="Minor improvements" />
     <MESSAGE value="Simplified inheritance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplified inheritance" />
+    <MESSAGE value="Beginning RMI implementation" />
+    <MESSAGE value="generated .class" />
+    <option name="LAST_COMMIT_MESSAGE" value="generated .class" />
   </component>
 </project>
