@@ -50,18 +50,42 @@ public class ClientUI extends JFrame implements IPrint {
                 });
                 card1.add(button);
 
-                button = new JButton("Set Home");
+                button = new JButton("Set Home Position");
                 button.addActionListener(e ->
                 {
                     CardLayout cardLayout = (CardLayout) botPane.getLayout();
-                    cardLayout.show(botPane,"Position");
+                    cardLayout.show(botPane,"Home");
+                });
+                card1.add(button);
+
+                button = new JButton("Set Robot Position");
+                button.addActionListener(e ->
+                {
+                    CardLayout cardLayout = (CardLayout) botPane.getLayout();
+                    cardLayout.show(botPane,"Robot");
                 });
                 card1.add(button);
 
                 button = new JButton("Get Home Path");
+                button.addActionListener(e ->
+                {
+                    try {
+                        print(iTravel.getPathString(true));
+                    } catch (RemoteException ex) {
+                        ex.printStackTrace();
+                    }
+                });
                 card1.add(button);
 
                 button = new JButton("Get Clean Path");
+                button.addActionListener(e ->
+                {
+                    try {
+                        print(iTravel.getPathString(false));
+                    } catch (RemoteException ex) {
+                        ex.printStackTrace();
+                    }
+                });
                 card1.add(button);
             }
 
@@ -70,9 +94,28 @@ public class ClientUI extends JFrame implements IPrint {
             {
                 card2.setLayout(new GridLayout(1,0));
 
+                JTextField xField = new JTextField();
+                xField.setToolTipText("X size of map");
+                card2.add(xField);
+
+                JTextField yField = new JTextField();
+                yField.setToolTipText("X size of map");
+                card2.add(yField);
+
                 JButton button = new JButton("OK");
                 button.addActionListener(e ->
                 {
+                    String xText = xField.getText();
+                    String yText = yField.getText();
+                    if (!xText.isBlank() && !yText.isBlank()){
+                        try {
+                            print("Generating new map of dimensions: "+xText+":" + yText);
+                            iTravel.createMap(Integer.parseInt(xText),Integer.parseInt(yText));
+                            print(iTravel.getMapString());
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
+                    } else print("Empty Parameters!");
                     CardLayout cardLayout = (CardLayout) botPane.getLayout();
                     cardLayout.show(botPane,"General");
                 });
@@ -100,7 +143,7 @@ public class ClientUI extends JFrame implements IPrint {
                     if (!xText.isBlank() && !yText.isBlank()){
                         try {
                             print("Home set to: "+xText+":" + yText);
-                            iTravel.setPosition(Integer.parseInt(xText),Integer.parseInt(yText));
+                            iTravel.setHome(Integer.parseInt(xText),Integer.parseInt(yText));
                         } catch (RemoteException ex) {
                             ex.printStackTrace();
                         }
@@ -111,9 +154,41 @@ public class ClientUI extends JFrame implements IPrint {
                 card3.add(button);
             }
 
+            JPanel card4 = new JPanel();
+            {
+                card4.setLayout(new GridLayout(1,0));
+
+                JTextField xField = new JTextField();
+                xField.setToolTipText("X coordinate");
+                card4.add(xField);
+
+                JTextField yField = new JTextField();
+                yField.setToolTipText("Y coordinate");
+                card4.add(yField);
+
+                JButton button = new JButton("OK");
+                button.addActionListener(e ->
+                {
+                    String xText = xField.getText();
+                    String yText = yField.getText();
+                    if (!xText.isBlank() && !yText.isBlank()){
+                        try {
+                            print("Robot set to: "+xText+":" + yText);
+                            iTravel.setPosition(Integer.parseInt(xText),Integer.parseInt(yText));
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
+                    } else print("Empty Parameters!");
+                    CardLayout cardLayout = (CardLayout) botPane.getLayout();
+                    cardLayout.show(botPane,"General");
+                });
+                card4.add(button);
+            }
+
             botPane.add(card1,"General");
             botPane.add(card2, "Map");
-            botPane.add(card3, "Position");
+            botPane.add(card3, "Home");
+            botPane.add(card4, "Robot");
         }
 
         JPanel topPane = new JPanel();

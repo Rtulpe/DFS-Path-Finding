@@ -4,18 +4,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Work on UI">
+    <list default="true" id="86f6edc5-7a92-43d5-a3ca-1fceb0532e33" name="Changes" comment="Position Mapper GUI implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/client/AppClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/client/AppClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/client/ClientUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/client/ClientUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/myNavigator/common/ITraveller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/server/PlatformServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerticalPrototype/server/PlatformServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerticalPrototype/server/Traveller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/client/AppClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/client/AppClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myNavigator/client/ClientUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/client/ClientUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myNavigator/common/ITraveller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myNavigator/common/ITraveler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/PlatformServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/PlatformServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Traveller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Traveler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655146059378</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Position Mapper GUI implementation">
+      <created>1655150077480</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1655150077480</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,7 +334,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changes in block handling" />
     <MESSAGE value="Brought ICoordinates back, switch from Nodal to 2d array based map implementation." />
     <MESSAGE value="Arbitrary map generation" />
     <MESSAGE value="Added DFS pathfinding for path to home" />
@@ -360,7 +358,8 @@
     <MESSAGE value="Draft of Client and Server" />
     <MESSAGE value="Traveller implemented, RMI connection works" />
     <MESSAGE value="Work on UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work on UI" />
+    <MESSAGE value="Position Mapper GUI implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Position Mapper GUI implementation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VerticalPrototype$ClientUI.ic" NAME="ClientUI Coverage Results" MODIFIED="1655148201777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
