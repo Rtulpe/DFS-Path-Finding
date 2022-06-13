@@ -14,12 +14,6 @@ public class ClientUI extends JFrame implements IPrint {
     private JTextArea textBox;
     private ITraveler iTravel;
 
-    public static void main(String[] args) throws Exception{
-        ITraveler subject = (ITraveler) Naming.lookup("rmi://127.0.0.1/subject");
-        ClientUI ui = new ClientUI(subject);
-        ui.print("Hello!");
-    }
-
     public ClientUI(ITraveler iTravel){
         super("Client");
         textBox = new JTextArea(10,20);

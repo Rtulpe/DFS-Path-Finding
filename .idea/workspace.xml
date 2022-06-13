@@ -58,7 +58,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.ClientUI">
+  <component name="RunManager" selected="Application.AppClient">
     <configuration name="AppClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="myNavigator.client.AppClient" />
       <module name="VerticalPrototype" />
@@ -107,9 +107,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientUI" />
-        <item itemvalue="Application.PlatformServer" />
         <item itemvalue="Application.AppClient" />
+        <item itemvalue="Application.PlatformServer" />
+        <item itemvalue="Application.ClientUI" />
       </list>
     </recent_temporary>
   </component>
