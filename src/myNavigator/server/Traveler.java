@@ -5,13 +5,14 @@ import myNavigator.server.commonUtils.PositionMapper;
 import myNavigator.server.mapUtils.MapUpdater;
 import myNavigator.server.pathUtils.PathMaker;
 
+import java.io.Serializable;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 /**
  * Unifying class for remote method calling
  */
-public class Traveler extends UnicastRemoteObject  implements ITraveler {
+public class Traveler extends UnicastRemoteObject  implements ITraveler, Serializable {
     private MapUpdater upd;
     private PositionMapper psm;
 
